@@ -1,4 +1,4 @@
-BaseURL = "hugo-adsillh"
+BaseURL = "https://moustakick.github.io/hugo-adsillh/"
 LanguageCode = "fr-FR"
 Title = "ADSILLH"
 Theme = "beautifulhugo"
