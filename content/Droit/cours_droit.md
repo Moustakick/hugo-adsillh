@@ -4,7 +4,7 @@ date: 2019-09-25T14:16:19+02:00
 draft: false
 ---
 # Cours 17/09/2019
-## Droit des logiciels et des donénes à caractère personels
+## Droit des logiciels et des données à caractère personels
 **Diapo** : http://dept-info.labri.fr/ENSEIGNEMENT/droitlog
 ## Economie des biens immatériels
 + Immatériel ≠ matériel
@@ -154,3 +154,5 @@ Aucun auteur n'a le droit de faire un profit sur une oeuvre sans autorisation ex
 > Acheter une oeuvre l'arboré a titre personnel ne pose aucun problème. Cependant si tu prends un photo de cette oeuvre et que tu la postes sur les réseaux sociaux alors
 
 Distincts de la possession physique de l'oeuvre
+
+Test de fin d'article.
