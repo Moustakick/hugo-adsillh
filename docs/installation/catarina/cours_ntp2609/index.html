@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>NTP - ADSILLH</title>
+  <meta name="description" content="Le protocole NTP Cours sur le protocole NTP Network Time Protocol.
+Enseignant : Catarina Christophe
+Synchronisation des horloges Les machines ont besoins d&rsquo;horodatés (mettre des timestamp) à un moment pour pouvoir se synchroniser dans l&rsquo;immédiat, pour des utilisations futur ou autres.
+L&rsquo;écoulement du temps et sa mesure est quelque chose d&rsquo;arbitraire.
+Cependant nous avons besoin de ça pour pouvoir parler pour pouvoir parler de la même chose. C&rsquo;est pourquoi il existe le protocole NTP.">
+  <meta name="author" content="Maxime Oçafrain"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "ADSILLH",
+    
+    "url": "https:\/\/moustakick.github.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/moustakick.github.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/moustakick.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/moustakick.github.io\/installation\/catarina\/cours_ntp2609\/",
+          "name": "N t p"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Maxime Oçafrain"
+  },
+  "headline": "NTP",
+  "description" : "Le protocole NTP Cours sur le protocole NTP Network Time Protocol.\nEnseignant : Catarina Christophe\nSynchronisation des horloges Les machines ont besoins d\x26rsquo;horodatés (mettre des timestamp) à un moment pour pouvoir se synchroniser dans l\x26rsquo;immédiat, pour des utilisations futur ou autres.\nL\x26rsquo;écoulement du temps et sa mesure est quelque chose d\x26rsquo;arbitraire.\nCependant nous avons besoin de ça pour pouvoir parler pour pouvoir parler de la même chose. C\x26rsquo;est pourquoi il existe le protocole NTP.",
+  "inLanguage" : "en",
+  "wordCount":  795 ,
+  "datePublished" : "2019-09-26T11:22:50",
+  "dateModified" : "2019-09-26T11:22:50",
+  "image" : "https:\/\/moustakick.github.io\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/moustakick.github.io\/installation\/catarina\/cours_ntp2609\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/moustakick.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/moustakick.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="NTP" />
+<meta property="og:description" content="Le protocole NTP Cours sur le protocole NTP Network Time Protocol.
+Enseignant : Catarina Christophe
+Synchronisation des horloges Les machines ont besoins d&rsquo;horodatés (mettre des timestamp) à un moment pour pouvoir se synchroniser dans l&rsquo;immédiat, pour des utilisations futur ou autres.
+L&rsquo;écoulement du temps et sa mesure est quelque chose d&rsquo;arbitraire.
+Cependant nous avons besoin de ça pour pouvoir parler pour pouvoir parler de la même chose. C&rsquo;est pourquoi il existe le protocole NTP.">
+<meta property="og:url" content="https://moustakick.github.io/installation/catarina/cours_ntp2609/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ADSILLH" />
+
+  <meta name="twitter:title" content="NTP" />
+  <meta name="twitter:description" content="Le protocole NTP Cours sur le protocole NTP Network Time Protocol.
+Enseignant : Catarina Christophe
+Synchronisation des horloges Les machines ont besoins d&rsquo;horodatés (mettre des timestamp) à un …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.58.1" />
+  <link rel="alternate" href="https://moustakick.github.io/index.xml" type="application/rss+xml" title="ADSILLH"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://moustakick.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://moustakick.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://moustakick.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://moustakick.github.io/">ADSILLH</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Système" href="/syst%C3%A8me/">Système</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Reseau" href="/reseau/">Reseau</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Projet" href="/projet/">Projet</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="BDD" href="/bdd/">BDD</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Installation</a>
+              <div class="navlinks-children">
+                
+                  <a href="/installation/catarina/">Catarina Christophe</a>
+                
+                  <a href="/installation/elineau/">Elineau Jean-Christophe</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Droit" href="/droit/">Droit</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="Installation-heading">
+              
+                <h1>NTP</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="le-protocole-ntp">Le protocole NTP</h1>
+
+<p>Cours sur le protocole NTP Network Time Protocol.<br />
+<u>Enseignant</u> : Catarina Christophe</p>
+
+<h2 id="synchronisation-des-horloges">Synchronisation des horloges</h2>
+
+<p>Les machines ont besoins d&rsquo;horodatés (mettre des timestamp) à un moment pour pouvoir se synchroniser dans l&rsquo;immédiat, pour des utilisations futur ou autres.<br />
+L&rsquo;écoulement du temps et sa mesure est quelque chose d&rsquo;arbitraire.<br />
+Cependant nous avons besoin de ça pour pouvoir parler pour pouvoir parler de la même chose. C&rsquo;est pourquoi il existe le protocole NTP. Il est basé sur la base temps <strong>UTC</strong>.</p>
+
+<h2 id="généralités">Généralités</h2>
+
+<p>Le protocole NTP est meilleur que le &ldquo;Time Protocol&rdquo; avec une precision supérieur à la seconde.
+Le protocole NTP est actuellement en version 3.
+LA RFC 1305 nous donne :
++ la description du protocole réseau
++ les modes de fonctionnement
++ les algorithmes à mettre en place dans les machines.</p>
+
+<blockquote>
+<p>Problème : le temps de demander l&rsquo;heure et de la recevoir, l&rsquo;heure n&rsquo;est plus la même. Par conséquent des algorithmes ont été dev à chaque version de NTP afin d&rsquo;améliorer la Synchronisation.<br />
+ Ce protocole par conséquent ne permet pas de garantir l&rsquo;heure EXACT. Cependant il permet en dessa d&rsquo;être synchronisé avec les machine avec lesquels on communique.</p>
+</blockquote>
+
+<p>Une variante existante est SNTP, qui est une variante légérement plus simple (tiré de la version 3 de NTP) qui permet de se cantonner à des version utilisation plus simples.</p>
+
+<h2 id="principes">Principes</h2>
+
+<p>NTP comprend :</p>
+
+<ul>
+<li>Une partie architecture : Le protocole se base sur une architecture mondial.
++
++</li>
+</ul>
+
+<h3 id="partie-architecture">Partie architecture</h3>
+
+<p>Arborescence classique : piramidale hierarchique. Des chefs qui donne l&rsquo;heure au subordonnées qui distribue à d&rsquo;autres etc.. Il y a que au niveau 1 de l&rsquo;arborescence que la machine n&rsquo;est pas cliente.<br />
+Les horloges du plus haut niveaux se base sur des serveurs dit <strong>primaires</strong> qui se trouvent au plus près de l&rsquo;horloge de références (Pour avoir le maximum de précisions).</p>
+
+<p><strong><em>Voir schèma de l&rsquo;arborescence</em></strong></p>
+
+<blockquote>
+<p>Une horloge temps réel n&rsquo;est pas que méchanique mais aussi physique: exemple avec horloge atomique (changement de couches atomiques).<br />
+Sur le schèma le protocole ne commence qu&rsquo;à la couche 2. Avant le lien est <em>physique</em>.</p>
+</blockquote>
+
+<p><u>Configuration du système</u> : Chaque noeud de cette archi doit être configuré. Il doit être défini s&rsquo;il s&rsquo;agit d&rsquo;un serveur parent, enfant. Il doit être défini qui on a au dessus, qui on a à côté et très peu qui on a en dessous.<br />
+L&rsquo;architecture est dites <em>fléxible, extensible et robuste</em> car il peut se baser sur toutes les machines autours pour fonctionner : entre-aide entre machines etc..</p>
+
+<p>Deux types de messages : messages de demande (client) et messages d&rsquo;envoie (serveur).</p>
+
+<p>Le mode d&rsquo;adressage est unicast : on peut choisir les personnes ou la quantité de personnes à qui on peut parler.</p>
+
+<h4 id="méthode-pour-la-diffusion-de-l-heure">Méthode pour la diffusion de l&rsquo;heure</h4>
+
+<p>Tout le monde peut donner l&rsquo;heure mais deux ne peuvent pas entre-communiquer en même temps. Par conséquent le système se base sur un paradigme du type &ldquo;symétrique ACTIF/PASSIF&rdquo; pour la diffusion latéral.</p>
+
+<blockquote>
+<p>L&rsquo;essentiel n&rsquo;est pas d&rsquo;avoir l&rsquo;heure exact mais une heure commune entre les machines</p>
+</blockquote>
+
+<p>Il y a aussi un paradigme du type &ldquo;broadcast&rdquo; : une machine peut demander l&rsquo;heure en broadcast et obtenir une réponse de plusieurs serveurs.</p>
+
+<h3 id="partie-algorithmie">Partie algorithmie</h3>
+
+<p>L&rsquo;algorithmes NTP prévoit pour chaque client des méthodes :</p>
+
+<ul>
+<li>Pour calculer la période d&rsquo;interrogation du ou des serveurs.</li>
+<li>Pour calculer l&rsquo;écart de son heure locale avec celle d&rsquo;un serveur donnée.</li>
+<li>Pour calculer la durée de transit des messages sur le réseau.</li>
+<li>Pour choisir le serveur qui présent les meilleures garanties de qualité, et calculer ainsi son stratum local.</li>
+<li>Pour filtrer les écarts et calculer les corrections temps/fréquence à appliquer sur son horloge locale.</li>
+<li>pour gérer les secondes intercalaires : passer d&rsquo;un heure x à un heure x+n se fait de manière progressive. Ce réglage se fait dans la config de l&rsquo;AdminSys.</li>
+</ul>
+
+<h2 id="architecture">Architecture</h2>
+
+<p><em>Voir la notion de strate sur la diapo avec le schèma.</em>
+&gt; On utilise de plus en plus de GPS pour avoir l&rsquo;heure.</p>
+
+<h2 id="description-détaillée-du-fonctionnement-ntp">Description détaillée du &ldquo;fonctionnement NTP&rdquo;</h2>
+
+<p><em>Voir diapo avec la partie paquet</em></p>
+
+<h2 id="ce-que-ne-fait-pas-ntp">Ce que ne fait pas NTP</h2>
+
+<p>L&rsquo;heure de référence fournie par NTP est UTC par conséquent il ne se charge pas :</p>
+
+<ul>
+<li>du changement de l&rsquo;heure dû au fuseau horaire.</li>
+<li>du passage à l&rsquo;heure d&rsquo;été et d&rsquo;hiver.</li>
+</ul>
+
+<p>Les messages de NTP passe en clair.</p>
+
+<h2 id="installation-du-service-ntp">Installation du service NTP</h2>
+
+<p><u>Partie configuration &ldquo;tutoriel&rdquo;.</u></p>
+
+<blockquote>
+<p>Les machines qui gère le mieux l&rsquo;heure sont les téléphones portable. Les fuseaux sont gérés grâce au système de géoloc ou cellulaire.</p>
+</blockquote>
+
+<p>Le système de pile de kapa? et de quartz permet de conserver le temps quand la machine est hors-ligne. Quand le système se remet en ligne les système se re-qualibre progressivement.<br />
+NTPD n&rsquo;est pas un service qui met à l&rsquo;heure.</p>
+
+<p>Fichier de configuration : <code>/etc/ntp.conf</code>. <em>Voir la &ldquo;forme&rdquo; de la config sur la diapo</em>.</p>
+
+<p>Commandes utiles :</p>
+
+<ul>
+<li><p>verification du serveur de référence :</p>
+
+<pre><code class="language-bash">ntpq -p
+</code></pre></li>
+
+<li><p>Miaou</p></li>
+</ul>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://moustakick.github.io/installation/catarina/cours_dhcp2609/" data-toggle="tooltip" data-placement="top" title="DHCP">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://moustakick.github.io/installation/catarina/cours_dns2609/" data-toggle="tooltip" data-placement="top" title="DNS">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Maxime Oçafrain
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://moustakick.github.io/">ADSILLH</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.58.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://moustakick.github.io/js/main.js"></script>
+<script src="https://moustakick.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://moustakick.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
