@@ -1,0 +1,68 @@
+BaseURL = "127.0.0.1"
+LanguageCode = "fr-FR"
+Title = "ADSILLH"
+Theme = "beautifulhugo"
+publishDir = "docs"
+
+[Author]
+  Name = "Maxime Oçafrain"
+
+[outputs]
+  home = [ "RSS", "HTML" ]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
+
+[Params]
+  Description = "Site de display des prises de notes de cours."
+  Subtitle = "Site de display des prises de notes de cours."
+  Twitter = "DatMaxime"
+  GitHub = "Moustakick"
+  Imglogo = "img/logo.svg"
+  AuthorImg = "img/author.jpg"
+  FancyBox = true
+  useHLJS = true
+
+[[menu.main]]
+  name   = "Installation"
+  url    = "/Installation/"
+  weight = 50
+
+[[menu.main]]
+  name   = "Elineau Jean-Christophe"
+  parent = "Installation"
+  url    = "/Installation/Elineau/"
+  weight = 55
+
+[[menu.main]]
+  name   = "Catarina Christophe"
+  parent = "Installation"
+  url    = "/Installation/catarina/"
+  weight = 50
+
+[[menu.main]]
+  name   = "Droit"
+  url    = "/Droit/"
+  weight = 60
+
+[[menu.main]]
+  name   = "BDD"
+  url    = "/BDD/"
+  weight = 40
+
+[[menu.main]]
+  name   = "Projet"
+  url    = "/Projet/"
+  weight = 30
+
+[[menu.main]]
+  name   = "Reseau"
+  url    = "/Reseau/"
+  weight = 20
+
+[[menu.main]]
+  name   = "Système"
+  url    = "/Système/"
+  weight = 10
