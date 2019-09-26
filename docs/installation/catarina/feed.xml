@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enseignant : Catarina Christophe on ADSILLH</title>
-    <link>127.0.0.1/installation/catarina/</link>
+    <link>https://moustakick.github.io/hugo-adsillh/installation/catarina/</link>
     <description>Recent content in Enseignant : Catarina Christophe on ADSILLH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Thu, 26 Sep 2019 15:54:36 +0200</lastBuildDate>
     
-	<atom:link href="127.0.0.1/installation/catarina/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://moustakick.github.io/hugo-adsillh/installation/catarina/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DNS</title>
-      <link>127.0.0.1/installation/catarina/cours_dns2609/</link>
+      <link>https://moustakick.github.io/hugo-adsillh/installation/catarina/cours_dns2609/</link>
       <pubDate>Thu, 26 Sep 2019 14:00:22 +0200</pubDate>
       
-      <guid>127.0.0.1/installation/catarina/cours_dns2609/</guid>
+      <guid>https://moustakick.github.io/hugo-adsillh/installation/catarina/cours_dns2609/</guid>
       <description>Le protocole DNS Cours sur le DNS Domain Name System et le protocole correspondant.
 Enseignant : Catarina Christophe
  C&amp;rsquo;est quand même vachement pratique. Cependant à l&amp;rsquo;époque c&amp;rsquo;était pas comme ça et c&amp;rsquo;est pas rentré dans tous les moeurs.
@@ -26,10 +26,10 @@ Aujourd&amp;rsquo;hui il y a le principe de l&amp;rsquo;annuaire qui est partag�
     
     <item>
       <title>NTP</title>
-      <link>127.0.0.1/installation/catarina/cours_ntp2609/</link>
+      <link>https://moustakick.github.io/hugo-adsillh/installation/catarina/cours_ntp2609/</link>
       <pubDate>Thu, 26 Sep 2019 11:22:50 +0200</pubDate>
       
-      <guid>127.0.0.1/installation/catarina/cours_ntp2609/</guid>
+      <guid>https://moustakick.github.io/hugo-adsillh/installation/catarina/cours_ntp2609/</guid>
       <description>Le protocole NTP Cours sur le protocole NTP Network Time Protocol.
 Enseignant : Catarina Christophe
 Synchronisation des horloges Les machines ont besoins d&amp;rsquo;horodatés (mettre des timestamp) à un moment pour pouvoir se synchroniser dans l&amp;rsquo;immédiat, pour des utilisations futur ou autres.
@@ -39,10 +39,10 @@ Cependant nous avons besoin de ça pour pouvoir parler pour pouvoir parler de la
     
     <item>
       <title>DHCP</title>
-      <link>127.0.0.1/installation/catarina/cours_dhcp2609/</link>
+      <link>https://moustakick.github.io/hugo-adsillh/installation/catarina/cours_dhcp2609/</link>
       <pubDate>Thu, 26 Sep 2019 09:46:19 +0200</pubDate>
       
-      <guid>127.0.0.1/installation/catarina/cours_dhcp2609/</guid>
+      <guid>https://moustakick.github.io/hugo-adsillh/installation/catarina/cours_dhcp2609/</guid>
       <description>Cours sur le protocole DHCP.
 Enseignant : Catarina Christophe
 Fonctionnement Un DHCP serveur (deamon DHCP) écoute sur le réseau les gens qui demandent une adresse IP, pour les distribuer selon la configuration réseau.
