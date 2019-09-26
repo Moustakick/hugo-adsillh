@@ -1,4 +1,4 @@
-#BaseURL = ""
+BaseURL = ""
 LanguageCode = "fr-FR"
 Title = "ADSILLH"
 Theme = "beautifulhugo"
