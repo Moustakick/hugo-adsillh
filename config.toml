@@ -16,7 +16,7 @@ publishDir = "docs"
     baseName = "feed"
 
 [Params]
-  Description = "Site de display des prises de notes de cours."
+  Description = "Site de display des prises de notes de cours & ressources de cours."
   Subtitle = "Site de display des prises de notes de cours."
   Twitter = "DatMaxime"
   GitHub = "Moustakick"
