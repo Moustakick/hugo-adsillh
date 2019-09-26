@@ -6,7 +6,7 @@ draft: false
 Alain Griffault : alain.griffault@u-bordeaux.fr
 Transparents : `cp ~ algriffa/LPro_BD/2019-2020/*pdf`
 
-# Cours 09/09
+# Cours 09/09/19
 
 Application WEB : Appli client serveur qui s’execute via un navigateur web. Ne sont pas comme une application de programmation, elles uttilisent divers langage différents (Code source hétérogène). HTML, CSS, PHP, SQL, JS, Java, ActiveX, Python,….\
 Avantages : Déploiement facile car utilise en général peu de ressources coté client.\
@@ -35,8 +35,8 @@ Modalités :
 + Projet individuel.
 + Les trois modules feront l’objet de rapports distincts.
 
-Programmes :
-*notions de base de SQL*
+<u> Programmes</u> :\
+*notions de base de SQL*\
 SQL : un langage ***prédicatif***
 
 ```
@@ -64,7 +64,7 @@ Définition : SGBD \
     + Sécurité des données (gestion des incidents).
     + Optimisation des opérations dans une souci constant de performance.
 
-# Cours 16/09
+# Cours 16/09/19
 ## Processus de construction d’une BD :
 
 + La partie du monde réel est décrite par des données et des contraintes
@@ -125,7 +125,7 @@ Un mauvais exemple :\
   3. Problème d’insertion : incoherence en cas d’introduction d’un A330 avec une capacité de 300. Introduction d’un nouveau type d’avion sans le faire voler ?
   4. Problème de suppression : suppression de IT5035, supprime le type Canadair.
 
-# Cours 23/09
+# Cours 23/09/19
 ## Le modèle entités-associations
 ### Principe de base
 Une manière d’obtenir un modèle relationnel, une forme d’intermediaire.
