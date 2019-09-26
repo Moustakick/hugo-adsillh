@@ -154,3 +154,5 @@ Aucun auteur n'a le droit de faire un profit sur une oeuvre sans autorisation ex
 > Acheter une oeuvre l'arboré a titre personnel ne pose aucun problème. Cependant si tu prends un photo de cette oeuvre et que tu la postes sur les réseaux sociaux alors
 
 Distincts de la possession physique de l'oeuvre
+
+Test de fin d'article.
