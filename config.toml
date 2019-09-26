@@ -1,4 +1,4 @@
-BaseURL = ""
+BaseURL = "hugo-adsillh"
 LanguageCode = "fr-FR"
 Title = "ADSILLH"
 Theme = "beautifulhugo"
