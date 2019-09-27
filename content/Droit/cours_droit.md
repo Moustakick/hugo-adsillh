@@ -9,7 +9,7 @@ draft: false
 ## Economie des biens immatériels
 + Immatériel ≠ matériel
 
-Le vol de donnée n’est pas un terme aprorié. Les notions de droits des biens matériels ne s’appliquent pas du tout aux bien immatériels. Notion de : Ayant droit → Code de la propriété intellectuel.
+Le vol de donnée n’est pas un terme aprorié. Les notions de droits des biens matériels ne s’appliquent pas du tout aux bien immatériels.\ Notion de : Ayant droit → Code de la propriété intellectuel.\
 Structure juridique et économiques matériel ≠ immatériel.
 
 + Le coût de copie des biens numériques est nul.
@@ -45,7 +45,7 @@ Wikipédia est un forme d’encyclopédie qui a détruit le modèle traditionnel
 
 ## Histoire du logiciel
 Informatique : science des traitements efficace de l’information.
-L’informatique n’est pas plus la science de l’ordinateur que l’astronomie est la science du téléscope. L’ordianteur est un outil qui permet de faire de l’informatique.
+L’informatique n’est pas plus la science de l’ordinateur que l’astronomie est la science du téléscope. L’ordinateur est un outil qui permet de faire de l’informatique.
 
 + Les premiers claculateurs ne possédaient pas de logiciel
     + Programmés « à la main ».
@@ -61,20 +61,23 @@ L’informatique n’est pas plus la science de l’ordinateur que l’astronomi
 + La question du statut […]. Notion de compatible « Ordinateur IBM ».
 
 ## Quel statut pour le logiciel ?
-Trois voies offertes au législateur :
+Trois voies offertes au législateur :\
 Si le droit des brevets ne fonctionne pas, on créer un droit dit « sui generis » (sur mesure). Problème du droit « sui generis » : durée de mise en œuvre des conventions internationales (si ce logiciel est transmis à l’international, ils n’ont peut être pas les mêmes droits et peuvent faire n’importe quoi avec). Finalement arrive le droit d’auteur, qui peut être appliqué au logiciel comme d’une œuvre.
 [2]
 Pour autant un logiciel n’est pas comme une œuvre de Victor Hugo.
 ## Droits des biens imamtériels
 Pour les parties qui nous intéresse : droit d’auteurs.
 CPI, deux parties :
-    • Code de la propriété littéraire et artistique
-    • Code de la propriété industrielle
+
++ Code de la propriété littéraire et artistique
++ Code de la propriété industrielle
+
 Si on ecrit de la musique, on peut négocier de l’argent sur la distribution et la réutilisation d’un morceau. Cependant si une caractéristique personnelle est utilisée pour modifié une œuvre, alors cette œuvre appartient à la personne qui l’a modifiée.
 ## Justification du droit d’auteur
-Ce qui s’oppose au legislateur à la balance, c’est une restriction en garantissant un interet pour tout le monde.
-Encourager globalement la cration en garantissant aux créateurs un monopole temporaire sur l’exploitation de leurs créations.
+Ce qui s’oppose au legislateur à la balance, c’est une restriction en garantissant un interet pour tout le monde.\
+Encourager globalement la cration en garantissant aux créateurs un monopole temporaire sur l’exploitation de leurs créations.\
 Le monopole temporaire représente un compromis entre l’interet du créateur et l’interet du public.
+
 ## Structuration du droit d’auteur
 Aux US le système de droit d’auteurs n’existe pas, les droits extra-patrimoniaux ne s’applique pas.
 
@@ -148,11 +151,96 @@ Il est prudent de se pré-constituer des preuves de paternités et d'antériorit
 
 > Sous license libres, un commit ou un post permet de montrer une marque de preuve.
 
+> Dans la sculpture on appel original au maximum 8 exemplaires d'une même sculpture.
+
 ## Droits patrimoniaux
 Aucun auteur n'a le droit de faire un profit sur une oeuvre sans autorisation expresse.
 
-> Acheter une oeuvre l'arboré a titre personnel ne pose aucun problème. Cependant si tu prends un photo de cette oeuvre et que tu la postes sur les réseaux sociaux alors
+> Acheter une oeuvre l'arboré a titre personnel ne pose aucun problème. Cependant si tu prends un photo de cette oeuvre et que tu la postes sur les réseaux sociaux alors.
 
 Distincts de la possession physique de l'oeuvre
 
-Test de fin d'article.
+> Pour un jeu quand un l'auteur meurt, alors l'aoeuvre est considéré orpheline.
+
+> copyright (logiciel F.Pellegrini) : Mention des année de divulgation. Sur le copyright les auteurs sont indiqués.
+
+# Cours 27/09/19
+## Drois extra-patrimoniaux
+
++ Protègent tant l'oeuvre que l'acte de créations
++ Trois droits distincts :
+  + Droit à la paternité : nul n'a le droit de dire que cette oeuvre n'appartient pas à un auteur.
+    + Les contrats "de nègre" (Auteurs cachés) sont illégaux et jugés comme tel.
+  + Droit au respect de l'oeuvre : par exemple, interdiction d'enlever des pages d'un oeuvre pour la publier etc.
+    + Droit spécifique pour le nom de l'oeuvre.
+  + Droit de divulgation : L'auteur à le droit de garder dans sa tête le secret de son oeuvre jusqu'à divulgation.
++ Les droits extra-patrimoniaux sont :
+  + Inaliénables : Ne peut pas transferer les droits.
+  + Perpétuels : Transféré à un héritier..
+
+## "Exceptions" aux droits de l'auteur
+
++ Définies par la loi
+  + Ce ne sont donc pas des exceptions individuelles mais un droit !
++ list exhaustive incluant :
+  + Copie à l'usage du copiste
+  + Représentation dans le cercle de famille (pour la lecture d'un DVD tu vas pas virer tout le monde pour mater ton film tout seul)
+  + Citation
+  + Parodie
+  + etc.
+
+> Ces exceptions ne sont pas une sorte de "tolérance" mais bien un droit ecrit dans le droit de la propriété intellectuelle.
+
+> Citation : les citations sont limité en fonction du type d'oeuvres. Quand on cite, on ne doit pas porter atteinte aux droits et à l'intégrité (+économique?) de l'oeuvre.
+
+> Parodie : rend hommage à l'oeuvre, ne doit toujours pas porté atteinte à l'intégrité de l'oeuvre.
+
+## L'oeuvre réalisée à plsuieurs
+
++ Trois catégories juridiques (L.113-2 CPI):
+  + Oeuvre de collaboration
+    + Oeuvre à la réalisation de laquelle ont plsuieurs personne phsyiques.
+    + Droits partagés.
+
+> Dans ce cas les personnes sont co-Auteurs et la distibution des parts sur l'oeuvre doit être choisis par ces auteurs aux préalable.
+
+  + Oeuvre composite
+    + Oeuvre nouvelle à laquelle est incorporée une oeuvre préexistante sans la collaboration des auteurs de celle-ci.
+
+> (ex : remix, André Warold - Joconde, etc..)\
+Une oeuvre composite ne peut pas être vendue sans porté atteinte aux droits des Ayant-Droits de l'oeuvre en question. (Sauf exception de citation et parodie). Il faut donc dans ce cas là voir avec les Ayant-Droits de l'oeuvre originiale, pour le partage des ventes etc..
+
+  + Oeuvre collective (collaboration =/= collective)
+    + Oeuvre créée à l'initiative d'une personne physique ou morale qui l'édite, dans alquelle la contribution des différents auteurs se fond [...].
+    + Exerce des droits patrimoniaux par la personne éditrice
+
+> Le patron dispose de tout les droits et ceux qui ont aidé à sa consitution ne sont pas considéré comme tel. \
+Apparition d'un principe de salariat dans l'industrie du travail intellectuel.
+
++ Catégories diffciles à maintenir avec la généralisation du travail collaboratif.
+
+# Le droit d'auteur adapté au logiciel
+## Algorithmes et programmes
+
+{{<mermaid align="left">}}
+graph LR;
+    A(Algorithme) -->|Codage| B(Programme)
+    B -->|Abstraction| A
+{{< /mermaid >}}
+
++ Algorithmes :
+  + Des idées
+  + Des mathématiques
+
+> Math -> Domaine des idées par conséquent les algorithmes sont de libre parcours.
+
++ Programmes :
+  + Des oeuvres de l'esprit
+  + Du discours
+    + Humain --> Humain
+    + Humain --> Ordianteur
+  + Traitements :
+    + Lorsque exécutés
++ Analogue au processus de création littéraire. (Ressemble au processus de la création littéraire, pour ça qu'il est basé sur le droit d'auteur)
+
+> Creation de la théorie des langages pour determiné si un langage est ambigue ou pas. Pour les ordinateurs : théorie des compilations.

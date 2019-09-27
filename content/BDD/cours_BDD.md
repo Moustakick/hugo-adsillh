@@ -135,5 +135,5 @@ Cas particulier : Une entité peuvent êtres liés à elle même.
 ### Contraintes de cardinalités
 Combien d’assocaitions pouvons nous lier à travers (R).\
 Ne pas lire ces diagrammes comme un UML Diagramme de classe.\
-TRANSPARENT : /net/cremi/algriffa/LPro_BD/2019-2020\
+*TRANSPARENT* : /net/cremi/algriffa/LPro_BD/2019-2020\
 Accès au cours :`cp ~ algriffa/LPro_BD/2019-2020/*pdf`
