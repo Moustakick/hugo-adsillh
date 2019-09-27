@@ -3,6 +3,10 @@ title: "TP1 Reseaux"
 date: 2019-09-27T14:06:45+02:00
 draft: false
 ---
+TP : http://dept-info.labri.fr/~thibault/Reseau/TP1.pdf
+
+Correction : http://dept-info.labri.fr/~thibault/Reseau/TP1-corr.pdf
+
 # Interfaces réseau et Adresse IP
 -Adresses :
 
