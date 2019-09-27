@@ -59,7 +59,7 @@ publishDir = "docs"
 
 [[menu.main]]
   name   = "Reseau"
-  url    = "/Reseau/"
+  url    = "/Reseaux/"
   weight = 20
 
 [[menu.main]]
