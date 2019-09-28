@@ -26,6 +26,16 @@ publishDir = "docs"
   useHLJS = true
 
 [[menu.main]]
+  name   = "Autres"
+  url    = "/Autres/"
+  weight = 70
+
+[[menu.main]]
+  name   = "Droit"
+  url    = "/Droit/"
+  weight = 60
+
+[[menu.main]]
   name   = "Installation"
   url    = "/Installation/"
   weight = 50
@@ -40,12 +50,7 @@ publishDir = "docs"
   name   = "Catarina Christophe"
   parent = "Installation"
   url    = "/Installation/catarina/"
-  weight = 50
-
-[[menu.main]]
-  name   = "Droit"
-  url    = "/Droit/"
-  weight = 60
+  weight = 55
 
 [[menu.main]]
   name   = "BDD"
@@ -61,6 +66,18 @@ publishDir = "docs"
   name   = "Reseau"
   url    = "/Reseaux/"
   weight = 20
+
+# [[menu.main]]
+#   name   = "Cours"
+#   url    = "/Reseaux/Cours"
+#   weight = 25
+#   parent = "Reseau"
+#
+# [[menu.main]]
+#   name   = "TP"
+#   url    = "/Reseaux/TP"
+#   weight = 25
+#   parent = "Reseau"
 
 [[menu.main]]
   name   = "Système"
