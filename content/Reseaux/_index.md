@@ -3,7 +3,7 @@ title: "Reseaux"
 date: 2019-09-27T15:25:04+02:00
 draft: false
 ---
-## Cours pratique et théorique de réseaux.
+## Cours pratiques et théoriques de réseaux.
 ### Enseignants :
 Samuel Thibault
 
