@@ -69,14 +69,14 @@ publishDir = "docs"
 
 [[menu.main]]
   name   = "Cours"
-  url    = "/Reseaux/Cours"
+  url    = "/Reseaux/Cours/"
   weight = 25
   parent = "Reseau"
 
 [[menu.main]]
   name   = "TP"
-  url    = "/Reseaux/TP"
-  weight = 25
+  url    = "/Reseaux/TP/"
+  weight = 26
   parent = "Reseau"
 
 [[menu.main]]
