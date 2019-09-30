@@ -5,6 +5,7 @@ draft: false
 ---
 ## Cours théorique et pratique sur les systèmes informatiques.
 ### Enseignants :
-
+Emmanuel Bouthenot
 
 ### Ressources :
+Slide : https://openics.org/teaching/
