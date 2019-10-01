@@ -14,6 +14,7 @@ Exemple avec un fichier :
 En théorie un fichier sur lequel on écrit simplement BORDEAUX devrait peser 8octets. En pratique il en pèse 9 à cause du caractère de changement de ligne (« man ascii » → caractère 0x0A).
 
 Sortie de la commande « hexdump -c < f.txt » :
+
 ![BORDEAUX\n](./Les_fichiers_ressources/Les_fichier_bordeaux_n.png)
 
 Pour empecher lors de l’écriture l’ajout de retour à la ligne automatique on peut faire la commande : « echo -n BORDEAUX > f.txt ».

@@ -17,7 +17,7 @@ publishDir = "docs"
 
 [Params]
   Description = "Site de display des prises de notes de cours & ressources de cours."
-  Subtitle = "Site de display des prises de notes de cours."
+  Subtitle = "Site de display des prises de notes de cours. Session 2019-2020."
   Twitter = "DatMaxime"
   GitHub = "Moustakick"
   Imglogo = "img/logo.svg"
