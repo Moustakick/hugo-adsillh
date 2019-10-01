@@ -49,10 +49,3 @@ A la différence de la fonction wait_pid() pour les processus, pour les threads 
 ## Hello World && Hello World - multithread
 Programme d'exemple pour la création de threads en C.\
 Une différence à noté est que pour la compilation du programme nous devons passé en argument "-pthread" en plus pour que tout ce passe correctement.
-
-test mermaid :
-
-pie
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15 

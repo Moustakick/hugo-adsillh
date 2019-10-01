@@ -9,13 +9,13 @@ Deux types de mémoire : mémoire vive (RAM) et mémoire morte (HDD, ROM, etc..
 
 <u>Fichier</u> : entité qui réside qqpart, réside sur une disposition logique qui permet d’acceuillir ce fichier. Souvent les fichier sont sotcker dans une structure hierarchique (système de fichier1). Définition simple : Un fichier est un suite d’information traduite de l’octet (une suite d’octet).\
 Exemple avec un fichier :
-![BORDEAUX](./Les_fichiers_ressources/Les_fichier_bordeaux.png)
+![BORDEAUX](../Les_fichiers_ressources/Les_fichier_bordeaux.png)
 
 En théorie un fichier sur lequel on écrit simplement BORDEAUX devrait peser 8octets. En pratique il en pèse 9 à cause du caractère de changement de ligne (« man ascii » → caractère 0x0A).
 
 Sortie de la commande « hexdump -c < f.txt » :
 
-![BORDEAUX\n](./Les_fichiers_ressources/Les_fichier_bordeaux_n.png)
+![BORDEAUX\n](../Les_fichiers_ressources/Les_fichier_bordeaux_n.png)
 
 Pour empecher lors de l’écriture l’ajout de retour à la ligne automatique on peut faire la commande : « echo -n BORDEAUX > f.txt ».
 

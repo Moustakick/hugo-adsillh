@@ -8,6 +8,6 @@ Application "dia" pour la modélisatio UML.
 
 ## Projet d'hôtel :
 
-![Table-hotel](./BDD_Projet_ressources/Table1.png)
+![Table-hotel](../BDD_Projet_ressources/Table1.png)
 
 > Un exemple de correction de la table entités-relations pour le schèma de l'hôtel.
