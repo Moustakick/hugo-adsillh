@@ -49,3 +49,36 @@ A la différence de la fonction wait_pid() pour les processus, pour les threads 
 ## Hello World && Hello World - multithread
 Programme d'exemple pour la création de threads en C.\
 Une différence à noté est que pour la compilation du programme nous devons passé en argument "-pthread" en plus pour que tout ce passe correctement.
+
+Il est intéressant de noter que la limite du nombre de threads est défini dans le fichier `/proc/sys/kernel/threads-max` et que malgré cela quand nous lançons le programme avec un nombre x de threads, l'allocation de mémoire ne se fait plus à partir de 32754 threads.
+
+## Détacher un processus léger
+`pthread_detach()`\
+C'est une manière de terminer un processus leger, car une fois detacher il ne peux prendre fin tout seul.
+
+## Identité d'un processus léger
+Les identifiants d'un processus léger sont "masqués". Pour cela que la fonction  `pthread_self()` est utile, pour pouvoir afficher son identifiant.
+
+La fonction `pthread_equal()` permet elle de savoir si deux thread sont différents.
+
+## Section critique
+Opération Atomique : L'idée derrière cette notion c'est qu'il s'agit d'une opération qui, comme la notion d'atome, est insécable. Par conséquent une opération atomique va être executé d'un bloc d'un seul.
+
+Rappel à la notion de Mutex pour la gestion de ces sections critiques.
+
+Dans le programme d'exemple : Nous avons deux fils d'executions qui partage la même variable. Si tout ce passe convenablement la valeur est incrémenté 100000000 de fois pour chaque thread. Donc le résultat devrait être 200000000 (ce qui n'est pas le cas).
+
+## Les mutex
+On peut associé le Mutex à un mécanisme de verrou entre les threads, cela permet notamment que deux threads n'ai pas accès a une section critique en même temps.
+
+## Les variables conditions
+Un mutex contrôle l'accès à une section critique. La variable condition est un petit peu différent.\
+Elle permet à un processu leger d'informer ces pairs du changement d'une ressource partagée.
+
+> Ex : telechargment dans un navigateur web. Pop-up avec le telechargement. A un moment le dl est fini. Pour afficher l'option indiquant que le dl est fini. Soit nous avons un mecanisme de scrutation, on va continuellement regardé pour voir si c'est fini. Soit nous avons un mecanisme d'avertissement, le thread va nous indiqué quand il a fini.
+
+Ce mécanisme empéche par conséquent une consommation excessive de CPU que peut engendrer une mécanisme de scrutation.
+
+Les variables de conditions sont sans états.
+
+## Thread safe
