@@ -19,4 +19,6 @@ draft: false
 
 - https://github.com/Moustakick/hugo-adsillh
 
-Prises de notes au format Markdown et display via un serveur Hugo héberger sur Netlify et compilé depuis le depôt Github, feel free to contribute. 
+___
+
+Prises de notes au format Markdown, site web Hugo hébergé sur Netlify et compilé depuis les sources du depôt Github, *feel free to contribute*.
