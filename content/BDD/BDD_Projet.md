@@ -1,16 +1,13 @@
 ---
-title: "ADSILLH"
+title: "BDD Projet"
 date: 2019-09-30T15:48:06+02:00
 draft: false
 ---
-Liste des ressources :
+# Bases de données (et applications web) : Le projet
+Application "dia" pour la modélisatio UML.
 
-- Le Wiki http://pidie.pizzacoca.fr/redmine/projects/licence-adsillh/wiki
+## Projet d'hôtel :
 
-- Les prises de cous de Yorick de l'an dernier : https://git.epha.se/ephase/cours_lpro-ADSILLH
+![Table-hotel](../BDD_Projet_ressources/Table1.png)
 
-- Le framagit : https://framagit.org/Ximun/adsillh2019
-
-- Le pad mis en place par Florian : https://pad.aquilenet.fr/p/adsillh2019
-
-- L'instance NextCloud : https://cloud.cestlebouquet.fr/index.php/s/PGY6yizpD69Nnqy
+> Un exemple de correction de la table entités-relations pour le schèma de l'hôtel.
