@@ -21,4 +21,4 @@ draft: false
 
 ___
 
-Prises de notes au format Markdown, site web Hugo hébergé sur Netlify et compilé depuis les sources du depôt Github, *feel free to contribute*.
+Prises de notes au format Markdown. Site web Hugo hébergé sur Netlify et compilé depuis les sources du depôt Github, *feel free to contribute*.
