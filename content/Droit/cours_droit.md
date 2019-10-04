@@ -244,3 +244,68 @@ graph LR;
 + Analogue au processus de création littéraire. (Ressemble au processus de la création littéraire, pour ça qu'il est basé sur le droit d'auteur)
 
 > Creation de la théorie des langages pour determiné si un langage est ambigue ou pas. Pour les ordinateurs : théorie des compilations.
+
+# Cours 4/10/19
+
+## Le droit d'auteur adapté
+Par définition : Le logiciel n'est pas un produit artistique.\
+Cependant le logiciel est un produit substituable : Ce qui nous interesse ce n'est pas l'accès ou la possession de l'objet mais **le service qu'il rend**. \
+Il est aussi question de **garantie** vis à vis du logiciel, ce qui n'est pas le cas sur une oeuvre.
+
+Par conséquent le modèle économique des droits d'auteurs n'est pas adapté au droit d'auteur du logiciel.
+
+## Adaptation des droits patrimonieux
+
+Ajout de nouvelles exceptions :
+
++ <u>Ajout de nouvelles exceptions</u> :
+
+> Quand non recoit le logiciel il ets placé sur un support (internet, cdrom, ...). A l'installation il y a donc des copies un peu partout (disque dur, mémoire vive, etc...). Si on deviat citer toutes les copies posssibles, ça serait dépendant du matériel etc.
+
++ <u>Observation du fonctionnement</u> : En regardant comment fonctionne le logiciel, j'ai le droit de le tester et bidouiller(sans ouvrir le code). *Le logiciel formalise des idées qui deviennent accessibles à tout le monde.*
++ <u>Copie de sauvegarde</u> : Le client à le droit de faire une copie de sauvergarde du logiciel, mais n'a pas le droit d'utiliser les deux copies en même temps.
+
+> Cela permet notammeent au créateurs de mettre en place des systèmes permettant la régulation des copies (cloud, etc.).
+
++ <u>La décompilation</u> : Elle est interdite sauf pour "interopérabilité".
+
+Suppression de l'exception de copie privée : Nécessite une licence pour chaque exemplaire du logiciel.
+
+Pour les auteurs salariées ou fonctionnaires, transfert automatique de la titularité des droits patrimonieux à l'employeur.\
+[...]
+
++ **Auteur prolétaire** : Terme inéxacte --> Notion de travailleur intellectuel.
+
+Pour les auteurs *non* salariées ou fonctionnaires
+
+> Ex :Les stagiaires (non rémunérés) qui ont codé un bout de code d'un lociel commercé, le stagiaire qui est auteur peut venir reclamer ces droits d'auteurs ou co-auteurs.
+
+## Adaptation des droits extra-patrimoniaux
+
++ Amoindrissement des droits extra-patrimoniaux : C'est une oeuvre industrielle qui peut être amélioré.
+
+## Portée de la protection
+Est couvert par le droit d'auteur adapté au logiciel tout ce qui relève de l'expression mathématique :
+
++ Le code source est couvert et les *codes objets*.
++ La "matériel de conception préparatoire" : Cahier des charges, UML, etc.
++ La documentation bénéficie d'un statut hybride :
+  + Aspect originaux couverts par le droit d'auteur classique
+  + Aspect supposé potentiellement non originaux couverts par le droit d'auteur adapté.
++ Les éléments graphique et sonores sont **couverts par le droit d'auteur classique**.
+
+> La musique peut être séparée du logiciel. Par conséquent elle dispose de droit différents par rapport au logiciel.
+
+## Quel statut pour les langages ?
+Un langage n'est pas une oeuvre : C'est l'idée du domaine des idées, elle porte l'idée. C'est un système de penser.
+
+Les outils liés à un langage sont à quelqu'un.
+
+Un langage informatique est aussi une langue de communication humaine. Elle permet l'échanger d'information entre les humaines.
+
+Ils ne peuvent pas être approriés sans porter préjudice à des drois plus élevés.
+
+> louchebem
+
+
+##
