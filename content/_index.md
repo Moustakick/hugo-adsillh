@@ -30,5 +30,5 @@ draft: false
 
 ___
 
-Prises de notes au format Markdown. Ces notes ne sont pas des cours complet mais des additions aux cours et leurs supports.\ 
+Prises de notes au format Markdown. Ces notes ne sont pas des cours complet mais des additions aux cours et leurs supports. \
 Site web Hugo hébergé sur Netlify et compilé depuis les sources du depôt Github, *feel free to contribute*.
