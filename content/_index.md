@@ -5,7 +5,7 @@ draft: false
 ---
 ### Liste des ressources :
 
-- Le Wiki : http://pidie.pizzacoca.fr/redmine/projects/licence-adsillh/wiki
+<!-- - Le Wiki : http://pidie.pizzacoca.fr/redmine/projects/licence-adsillh/wiki
 
 - Les prises de cous de Yorick de l'an dernier : https://git.epha.se/ephase/cours_lpro-ADSILLH
 
@@ -13,7 +13,16 @@ draft: false
 
 - Le pad mis en place par Florian : https://pad.aquilenet.fr/p/adsillh2019
 
-- L'instance NextCloud : https://cloud.cestlebouquet.fr/index.php/s/PGY6yizpD69Nnqy
+- L'instance NextCloud : https://cloud.cestlebouquet.fr/index.php/s/PGY6yizpD69Nnqy -->
+- Le Wiki : https://frama.link/_YxpF6Nc
+
+- Cours de Yorick : https://frama.link/rWhDNX0d
+
+- Le framagit : https://frama.link/dCA1bBme
+
+- Pad commun : https://frama.link/_1bJWF-7
+
+- L'instance NextCloud : https://frama.link/ZtEwY_RW
 
 ### Lien github du site :
 
