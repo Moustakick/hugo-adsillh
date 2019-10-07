@@ -296,6 +296,8 @@ Est couvert par le droit d'auteur adapté au logiciel tout ce qui relève de l'e
 
 > La musique peut être séparée du logiciel. Par conséquent elle dispose de droit différents par rapport au logiciel.
 
+> Meme si la forme 3D est produite de maniere algorithmique, ça reste une oeuvre.
+
 ## Quel statut pour les langages ?
 Un langage n'est pas une oeuvre : C'est l'idée du domaine des idées, elle porte l'idée. C'est un système de penser.
 
@@ -307,5 +309,86 @@ Ils ne peuvent pas être approriés sans porter préjudice à des drois plus él
 
 > louchebem
 
+# Licences
 
-##
+Un licence s'incrit dans un cadre inscrit par la loi, par conséquent si il y a quelque chose d'illégal dans un licence alors c'est la loi qui gagne. (notion de close abusive)
+
+La licence est un offre de contrat de la part du fournisseur, qui définit les conditions d'utilisation d'une oeuvre.
+
+> Ce n'est pas tout à fait une contrat. Un contrat normalement est censé être rédidigé entre des co-contractant de force égale. Toi =/= Google
+
+## Les différentes types de licences
+De nombreux types de licences :
+
++ <u>Privative</u> ("propriétaire") : Droit d'usage uniquement. \
+ Le fournisseur peut arreter la maintenance à tout moment.
++ <u>Partagicielle</u> ("Shareware") : **WINRAR** : Le droit de copie est illimité mais le droit d'usage est limité. \
+ Licence privative autorisant la diffusion gratuite mais pour lequel une contribution est demandé au bout d'un periode.
++ <u>Gratuicielle</u> ("Freeware") : Accès gratuit au logiciel mais sans forcement donner d'autres droits. (Ex : Freemium)
+
+> Pour la question du "service" : Si le service est gratuit c'est que c'est nous la marchandise (Google : regie publicitaire).
+
++ <u>Libre</u> ("Free Software") : licence donnant de nombreux droits aux utilisateurs. \
+Pas forcement gratuit.
++ De domaine public : Volontaire --> renonce à ces droits sur un logiciel.
+
+##  Recapitulatif des types de licences
+> Il y a des logiciel sous licence libre qui ne sont pas des logiciels en téléchargement ou partage libres.
+
+# Logiciels et licence libres
+
+## Logiciel libre
++ Le logiciel llibre est un innovation juridique et non pas technique.
++ Permet l'emergence de modèles économiques déconcentrés adaptés à l'économie immatérielle.
+
+> Dès le moment ou on accepte de modifier ou utiliser les logiciels, nous acceptons les termes du contrat et on s'inclut à son écosystème juridique.
+
+### Les quatres libertés
+
++ Liberté d'utilisation pour tout usage
++ Liberté de copie du logiciel original
+
+> Ce qui est permis par les licences partagicielle est permis pour les licences libres aussi.
+
++ Liberté de consultation et de modification du code source
+
+> Cela va imposer des droits au fournisseur. Si on transmet un logiciel libre alors il faut informer le destinataire du code source et d'où il se trouve.
+
++ Liberté de rediffusion du logiciel modifié.
+
+> Quand on le modifie, il s'agit d'une oeuvre composite. Du coup le droit des oeuvre composites s'applique. C'est là qu'intervient cette licence.
+
+### Différence entre les licences libres
+Les différences oprtent sur les modalités de redistribution du logiciel modifié :
+
++ Si persistance des obligations de redistribution du code source : "copyleft" =/= "copyright"
+  + liberté collective
+
++ Licence permissive : "non copyleft"
+  + Liberté individuelle
+
+## Mode d'action des licences libres
+Contribution au coeur du logiciel : Ajout dans le code source.\
+Greffon : Le logiciel à été bien pensé et on a juste à ajouter des greffons.\
+Module utilisant le logiciel : Juste utilisé ce qui sort du logiciel.\
+
+Tout cela forme une oeuvre dérivée (composite).
+
+> Dans la licence je vais décrire comment utiliser l'oeuvre composite qui découle du logiciel.
+
+Les licences libres veillent à ce que **"leurs termes"** s'appliquent à toute oeuvre dérivée
+
+> N'implique pas toujours que l'oeuvre composite soit de la même licence.
+
+## Principaux termes
+
+### Les licences persistantes
+
+Aussi appelées "pérennes" , "à copyleft faible".\
+Exemple : LGPL, CeCILL-C (français)
+
+> Tout ce qui utilise le logiciel peut être de n'importe quelle forme.
+
+> Les greffons peuvent être sous n'importe quelle forme sauf pour les "faux greffons" qui sont en vrais des fortes contribution.
+
+> Ce qui reste de libre, c'est ce qui est et qui va reste (le logiciel original) d'où la notion de "pérennes".
