@@ -9,3 +9,4 @@ Emmanuel Bouthenot
 
 ### Ressources :
 Slide : https://openics.org/teaching/
+Scripts : /système/scripts/

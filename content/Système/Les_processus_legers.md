@@ -82,3 +82,11 @@ Ce mécanisme empéche par conséquent une consommation excessive de CPU que peu
 Les variables de conditions sont sans états.
 
 ## Thread safe
+
+---
+
+Creation d'un programme `./prog_thread` qui ouvre un fichier `f`, et qui va lire un nombre de bloc limité `b` d'un taille donnée `s`.
+
+`./prog_thread f b s`
+
+On va ensuite faire un hash de chacun de ces blocs `xn`, on les concaténe et on fait un hash md5 de tout ça `x1 + x2 + x3 + ... + xn`.
