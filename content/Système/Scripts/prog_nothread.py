@@ -11,21 +11,8 @@
 
 import os
 import sys
-from threading import Thread, Lock
+from threading import Thread
 import hashlib
-
-glob = 0
-lock = Lock()
-
-def tmain():
-    global glob
-    for i in range(LOOP_COUNT):
-        lock.acquire()
-        loc = glob
-        loc += 1
-        glob = loc
-        lock.release()
-        
 
 def md5sum(data):
     return hashlib.md5(data).hexdigest()
