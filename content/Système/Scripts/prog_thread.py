@@ -14,30 +14,26 @@ import sys
 from threading import Thread, Lock
 import hashlib
 
-glob = 0
-lock = Lock()
-
-def tmain():
-    global glob
-    for i in range(LOOP_COUNT):
-        lock.acquire()
-        loc = glob
-        loc += 1
-        glob = loc
-        lock.release()
+def tmain(f, s, n):
+    totalhash = ""
+    count = 0
+    while count < n:
+        os.lseek(f, count*s, os.SEEK_CUR)
+        readBytes = os.read(f, s)
+        totalhash += md5sum(readBytes)
+        count +=1
         
-
-def md5sum(data):
-    return hashlib.md5(data).hexdigest()
+    # Sortie du resultat
+    print(totalhash)
+    totalhashencode = totalhash.encode('utf-8')
+    print("Resultat final :")
+    print(md5sum(totalhashencode))
 
 # Gestion d'erreur
 def main():
     if len(sys.argv) < 4:
         print ("Wrong arguments")
         sys.exit() #EX_USAGE
-
-# Ajouter de la gestion d'erreur avec pour les arguments
-
 
 # File path
     path = sys.argv[1]
@@ -47,20 +43,26 @@ def main():
     s = int(sys.argv[3])
     n = int(sys.argv[2])
 
+    count = 1
+    threads = []
+    for i in range(count):
+        print("Creating thread no %d" % (i+1))
+        # Petites modif du programme pour passer plusieurs args
+        thread = Thread(target=tmain, args=(f,s,n))
 
-    totalhash = ""
-    count = 0
-    while count < n:
-        os.lseek(f, count*s, os.SEEK_CUR)
-        readBytes = os.read(f, s)
-        totalhash += md5sum(readBytes)
-        count +=1
+        try:
+            thread.start()
+        except Exception as e:
+            print('Unable to create thread')
+            break
+        threads.append(thread)
 
-    # Sortie du resultat
-    print(totalhash)
-    totalhashencode = totalhash.encode('utf-8')
-    print("Resultat final :")
-    print(md5sum(totalhashencode))
+    for t in threads:
+        try:
+            thread.join()
+        except Exception as e:
+            print('Unable to join thread')
+            continue
 
 if __name__ == "__main__":
     main()
