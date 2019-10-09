@@ -14,20 +14,26 @@ import sys
 from threading import Thread, Lock
 import hashlib
 
-def tmain(f, s, n):
+def tmain(tf, ts, tn):
     totalhash = ""
     count = 0
-    while count < n:
-        os.lseek(f, count*s, os.SEEK_CUR)
-        readBytes = os.read(f, s)
+    while count < tn:
+        os.lseek(tf, count*ts, os.SEEK_CUR)
+        readBytes = os.read(tf,ts)
         totalhash += md5sum(readBytes)
         count +=1
-        
     # Sortie du resultat
     print(totalhash)
     totalhashencode = totalhash.encode('utf-8')
     print("Resultat final :")
     print(md5sum(totalhashencode))
+
+
+# Retourne un string en md5 (string)
+def md5sum(data):
+    return hashlib.md5(data).hexdigest()
+
+
 
 # Gestion d'erreur
 def main():
@@ -35,14 +41,19 @@ def main():
         print ("Wrong arguments")
         sys.exit() #EX_USAGE
 
+
+
 # File path
     path = sys.argv[1]
-
 # Declaration de toutes les variables de l'énoncé
     f = os.open(path, os.O_RDONLY)
     s = int(sys.argv[3])
     n = int(sys.argv[2])
 
+## Je pense qu'il va falloir ouvrir le fichier une fois par thread pour gerer le conflit.
+
+
+# TRHEAD ET GESTION DE THREAD
     count = 1
     threads = []
     for i in range(count):
@@ -63,6 +74,7 @@ def main():
         except Exception as e:
             print('Unable to join thread')
             continue
+# FIN DE LA GESTION DE THREAD
 
 if __name__ == "__main__":
     main()
