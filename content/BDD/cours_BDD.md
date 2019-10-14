@@ -6,6 +6,27 @@ draft: false
 Alain Griffault : alain.griffault@u-bordeaux.fr
 Transparents : `cp ~ algriffa/LPro_BD/2019-2020/*pdf`
 
+<!-- TOC -->
+
+- [Cours 09/09/19](#cours-090919)
+- [Cours 16/09/19](#cours-160919)
+  - [Processus de construction d’une BD :](#processus-de-construction-dune-bd%C2%A0)
+  - [Schéma relationel :](#sch%C3%A9ma-relationel%C2%A0)
+  - [Concept de base : base de données](#concept-de-base%C2%A0-base-de-donn%C3%A9es)
+- [Cours 23/09/19](#cours-230919)
+  - [Le modèle entités-associations](#le-mod%C3%A8le-entit%C3%A9s-associations)
+    - [Principe de base](#principe-de-base)
+    - [Les types d’entités](#les-types-dentit%C3%A9s)
+    - [Contraintes de cardinalités](#contraintes-de-cardinalit%C3%A9s)
+- [Algèbre relationnelle](#alg%C3%A8bre-relationnelle)
+  - [L'opérateur de projection](#lop%C3%A9rateur-de-projection)
+  - [L'opérateur de selection](#lop%C3%A9rateur-de-selection)
+    - [Exemple](#exemple)
+  - [L'opérateur de jointure](#lop%C3%A9rateur-de-jointure)
+    - [Exemple](#exemple-1)
+
+<!-- /TOC -->
+
 # Cours 09/09/19
 
 Application WEB : Appli client serveur qui s’execute via un navigateur web. Ne sont pas comme une application de programmation, elles uttilisent divers langage différents (Code source hétérogène). HTML, CSS, PHP, SQL, JS, Java, ActiveX, Python,….\
@@ -195,3 +216,12 @@ Cela permet de lier deux tables qui disposent d'un attribut logique commun.
 > Nom de la personne qui consomme des crêpes ?
 
 Dans cette exemple l'attribut commun est l'ID. En SQL pour  la table "consommation" il s'agit d'une clé étrangère et pour la table "client" il s'agit de sa clé primaire.
+
+La requête SQL correspondant à l'exemple est :
+
+```SQL
+SELECT * FROM RI NATURAL JOIN R2
+```
+![](cours_BDD-80d84.png)
+
+## Opérations binaires
