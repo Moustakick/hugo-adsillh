@@ -137,3 +137,61 @@ Combien d’assocaitions pouvons nous lier à travers (R).\
 Ne pas lire ces diagrammes comme un UML Diagramme de classe.\
 *TRANSPARENT* : /net/cremi/algriffa/LPro_BD/2019-2020\
 Accès au cours :`cp ~ algriffa/LPro_BD/2019-2020/*pdf`
+
+# Algèbre relationnelle
+
+>  Comment interroger une base de donnée en faisant de l'algèbre relationnelle.\
+SQL est de l'algèbre relationnelle.
+
+Cela va permettre de créer de nouvelle relation à partir de relation (Base théorique du langage SQL)
+
+## L'opérateur de projection
+
+> Noté pi
+
+En algèbre on défini une relation R.\
+En SQL la requête qui correspond est :
+
+```SQL
+SELECT * FROM R;
+```
+> Cela affiche tout le contenu de R
+
+
+Pour le calcul dans R(A,B,C,D) (Diapo) :
+
+C et D est affiché en supprimant les doublons.
+
+Pour cette expression algébrique la requête SQL correspondante est :
+
+```SQL
+SELECT DISTINCT C,D FROM R;
+```
+
+> L'opérateur DISTINCT permet de ne pas affiché les doublons parmis les n-uplets des attributs.
+
+Si je fait la même projection pour A,B que pour C,D il n'y aura pas de doublons du coup l'algorithme sera linéaire.
+
+## L'opérateur de selection
+
+> Noté sigma
+
+Avec cette opérateur nous allons pouvoir définir un prédicat (partition horizontal) (ex : 'C>2' voir diapo).
+
+### Exemple
+
+```SQL
+SELECT num_serie FROM Avion WHERE capacite>150
+```
+
+## L'opérateur de jointure
+
+> Noté zboui
+
+Cela permet de lier deux tables qui disposent d'un attribut logique commun.
+
+### Exemple
+
+> Nom de la personne qui consomme des crêpes ?
+
+Dans cette exemple l'attribut commun est l'ID. En SQL pour  la table "consommation" il s'agit d'une clé étrangère et pour la table "client" il s'agit de sa clé primaire.
