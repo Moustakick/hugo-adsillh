@@ -222,6 +222,5 @@ La requête SQL correspondant à l'exemple est :
 ```SQL
 SELECT * FROM RI NATURAL JOIN R2
 ```
-![](cours_BDD-80d84.png)
 
 ## Opérations binaires
