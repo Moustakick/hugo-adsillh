@@ -1,7 +1,9 @@
 ---
+categories = ["Autres"]
 title: "Outils de communication et travail"
 date: 2019-09-30T13:52:51+02:00
 draft: false
+tags: ["outil"]
 ---
 ### Confiuration annexe :
 
@@ -64,4 +66,4 @@ ssh -Y ton_login@nom_machine
 ```
 
 NB : Il est possible d'allumer les PC depuis le site https://services.emi.u-bordeaux.fr/allservices/, rubrique "Le Démarrage à distance des pc dans les salles".\
-Le "-Y" ou alors "-X" permet de gèrer les applications graphiques en ssh.s 
+Le "-Y" ou alors "-X" permet de gèrer les applications graphiques en ssh.s
