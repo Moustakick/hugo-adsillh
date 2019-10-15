@@ -15,7 +15,7 @@ IPC = Inter Process Communication.\
 Les signaux sont un mécanisme d'IPC.\
 --> C'est ce qui va permettre la communication entre les processus.
 
-Dans les processus legers la communication via IPC n'ont pas grand interet car les processus leger partage le même emplacement mémoire, par conséquent partage les mêmes variables etc.
+Dans les processus légers la communication via IPC n'ont pas grand intérêt car les processus léger partage le même emplacement mémoire, par conséquent partage les mêmes variables etc.
 
 ## Anatomie d'un processus en mémoire
 Ce que l'on voit dans la figure en page 5, c'est que dans l'espace mémoire, au lieux d'avoir une seule pile d'execution, le processus leger va creer une autre pile d'execution (stack) dans le même emplacement mémoire.
@@ -73,11 +73,11 @@ On peut associé le Mutex à un mécanisme de verrou entre les threads, cela per
 
 ## Les variables conditions
 Un mutex contrôle l'accès à une section critique. La variable condition est un petit peu différent.\
-Elle permet à un processu leger d'informer ces pairs du changement d'une ressource partagée.
+Elle permet à un processus léger d'informer ces pairs du changement d'une ressource partagée.
 
 > Ex : telechargment dans un navigateur web. Pop-up avec le telechargement. A un moment le dl est fini. Pour afficher l'option indiquant que le dl est fini. Soit nous avons un mecanisme de scrutation, on va continuellement regardé pour voir si c'est fini. Soit nous avons un mecanisme d'avertissement, le thread va nous indiqué quand il a fini.
 
-Ce mécanisme empéche par conséquent une consommation excessive de CPU que peut engendrer une mécanisme de scrutation.
+Ce mécanisme empêche par conséquent une consommation excessive de CPU que peut engendrer une mécanisme de scrutation.
 
 Les variables de conditions sont sans états.
 
