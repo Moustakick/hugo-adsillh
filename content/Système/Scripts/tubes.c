@@ -23,9 +23,11 @@ int main () {
       perror("Unable to close pipe from parent");
     }
     fdout = fdopen(fds[1], "w");
+
     if (fdout == NULL) {
       perror("Unable to open pipe as a stream for writing");
     }
+
     for(int i=1; i<=1000; i++) {
       fprintf(fdout, "%d\n", i);
     }

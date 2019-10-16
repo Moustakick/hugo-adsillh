@@ -28,8 +28,10 @@ def main():
 # envoie d'une requete avec une méthode spécifique
     sock.send(b"GET /\r\n\r\n")
 
+    data = b''
 # reception de la réponse avec une taille donnée
-    print(sock.recv(128000))
+    while sock.recv(4096) != data:
+        print(sock.recv(4096))
 
 
 
