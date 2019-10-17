@@ -178,3 +178,78 @@ Fichiers à config :
 Le LDAP permet de gerer toutes les problèmatiques de LD. Grâce à des valeurs comme groupofname et ...
 
 Le petit script à mettre ne oeuvre pour que le POSTFIX soit capable de le traiter. Il se compose de 6 lignes. la premiere pour faire appel au serveur d'annuaire, la deuxieme pour le port, la troisieme on lui met la base de recherche (a quel endroit tu vas chercher recursivement), il faut lui donner le compte qui à les droits d'admin (eg : cn=admin,[...]), ensuite on lui met le query filter permettant de définir des filtres pour choisir les utilisateurs en fonction des paramètres passés.
+
+```bash
+root@debian:/etc/postfix# telnet localhost 25
+Trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+220 debian.entreprise.com ESMTP Postfix (Debian/GNU)
+test
+502 5.5.2 Error: command not recognized
+mail from: test@entreprise.com
+250 2.1.0 Ok
+data
+554 5.5.1 Error: no valid recipients
+mail
+503 5.5.1 Error: nested MAIL command
+mail from: maxime.ocafrain@entreprise.com
+503 5.5.1 Error: nested MAIL command
+rcpt to: maxime.ocafrain@entreprise.com
+550 5.1.1 <maxime.ocafrain@entreprise.com>: Recipient address rejected: entreprise.com
+rcpt to:maxime.ocafrain@localhost
+250 2.1.5 Ok
+data
+354 End data with <CR><LF>.<CR><LF>
+To:maxime.ocafrain@entreprise.com
+From:admin@enteprise.com
+Subject: Test SMTP
+Ceci est un test d'envoie de courriel via notre serveur SMTP
+
+```
+# A trier
+
+Penser à installer `apt install postfix-ldap`
+
+Création d'un fichier de config pour les utilisateurs du ldap dans `/etc/postfix/` :
+
+```bash
+server_host = ldap://127.0.0.1/
+search_base = dmdName=users,dc=entreprise,dc=com
+bind = yes
+bind_dn = cn=admin,dc=entreprise,dc=com
+bind_pw = mdpadmin
+query_filter = (&(objectClass=organizationalPerson)(uid=%s))
+result_attribute = uid
+result_format = %s/
+```
+
+postfix reload 
+
+postmap -q maxime.ocafrain@entreprise.com ldap:/etc/postfix/ldap_users.cf
+
+```bash
+maxime.ocafrain@debian:~$ mail -s "Sujet de test" sarah.lu@debian.entreprise.com
+Cc: 
+Voici un mail de test
+```
+
+```bash
+"/var/mail/sarah.lu": 1 message 1 nouveau
+>N   1 Maxime Ocafrain    jeu. oct. 17 10:  13/517   Sujet de test
+? 
+Return-Path: <maxime.ocafrain@debian>
+X-Original-To: sarah.lu@debian.entreprise.com
+Delivered-To: sarah.lu@debian.entreprise.com
+Received: by debian.entreprise.com (Postfix, from userid 2000)
+	id 82867C0AA; Thu, 17 Oct 2019 10:29:16 +0200 (CEST)
+Subject: Sujet de test
+To: <sarah.lu@debian.entreprise.com>
+X-Mailer: mail (GNU Mailutils 3.5)
+Message-Id: <20191017082916.82867C0AA@debian.entreprise.com>
+Date: Thu, 17 Oct 2019 10:29:16 +0200 (CEST)
+From: Maxime Ocafrain <maxime.ocafrain@debian>
+
+Voici un mail de test
+```
+
