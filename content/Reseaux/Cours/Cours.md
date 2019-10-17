@@ -30,7 +30,8 @@ Sauf qu'il va passer par un autre point (une autre carte réseau) de préférenc
 
 {{<mermaid align="left">}}
 graph LR;
-    A(Demandeur) -->|Co securisée| B(VPN) --> C(Connexion demandée)
+    A(Demandeur) --> | Co securisée | B(VPN)
+    B --> C(Connexion demandée)
 {{< /mermaid >}}
 
 Pour TOR le principe est le même mais il passe par 3 connexions différentes.
