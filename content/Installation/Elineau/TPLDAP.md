@@ -207,7 +207,7 @@ Subject: Test SMTP
 Ceci est un test d'envoie de courriel via notre serveur SMTP
 
 ```
-# A trier
+// A trier
 
 Penser à installer `apt install postfix-ldap`
 
@@ -224,20 +224,20 @@ result_attribute = uid
 result_format = %s/
 ```
 
-postfix reload 
+postfix reload
 
 postmap -q maxime.ocafrain@entreprise.com ldap:/etc/postfix/ldap_users.cf
 
 ```bash
 maxime.ocafrain@debian:~$ mail -s "Sujet de test" sarah.lu@debian.entreprise.com
-Cc: 
+Cc:
 Voici un mail de test
 ```
 
 ```bash
 "/var/mail/sarah.lu": 1 message 1 nouveau
 >N   1 Maxime Ocafrain    jeu. oct. 17 10:  13/517   Sujet de test
-? 
+?
 Return-Path: <maxime.ocafrain@debian>
 X-Original-To: sarah.lu@debian.entreprise.com
 Delivered-To: sarah.lu@debian.entreprise.com
@@ -253,3 +253,6 @@ From: Maxime Ocafrain <maxime.ocafrain@debian>
 Voici un mail de test
 ```
 
+### SAMBA LDAP
+
+http://simon.crespeau.emi.u-bordeaux.fr/cours/adminsys/ldap/ldap-et-samba/
