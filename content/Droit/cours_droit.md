@@ -392,3 +392,96 @@ Exemple : LGPL, CeCILL-C (français)
 > Les greffons peuvent être sous n'importe quelle forme sauf pour les "faux greffons" qui sont en vrais des fortes contribution.
 
 > Ce qui reste de libre, c'est ce qui est et qui va reste (le logiciel original) d'où la notion de "pérennes".
+
+```
+Il faut que je recopie les explications des différentes licence.
+
+```
+
+## Compilation, décompilation...
+
+### langages de bas et haut niveau
+
+### Compilation e décompilation
+
+<u>Code source</u> : sortie du programmeur
+
+<u>Code objet</u> : Résultante de se code. ex : programme exécutable
+
+ *Question* : Est-ce que nous pouvons retrouver le code source depuis le code binaire ?
+
+C'est ce que l'on appel la décompilation.
+
+Il est par nature très difficile de décompiler un code source.
+
+Site : godbolt.org pour voir du code compilé en langage machine.
+
+> Aquarium vs bouillabaisse : La différence c'est le mixeur, décompiler revient à dé-mixer la bouillabaisse.
+
+Le code source est une œuvre. Le **code objet** une résultante de se code source et par conséquent est une **œuvre dérivée**.\
+Est-ce que la compilation par un compilateur ?
+
+Le **compilateur** est un œuvre en tant que logiciel. Mais étant donné qu'il travail de manière automatique il **ne possède aucun droit** sur le logiciel compilé.
+
+> Le vendeur du tracteur ne récupère pas 10% de la récolte du fermier.
+
+Un autre problème étant que le compilateur met une entête et une fin au code pour gérer les problèmes de compatibilité. Cependant en droit, l'auteur du compilateur doit dire qu'il renonce aux droits de l'apport fait au logiciel. (ça serait beaucoup trop difficile à gérer, et personne n'utiliserai un compilateur).
+
+### Interdiction de la compilation
+
+*Question* : Qu'est-ce qu'on a le droit de faire avec ce code objet ?
+
+{{<mermaid align="left">}}
+graph TB;
+    A(Idées) -->|Codage| B(Programme A)
+    A -->|Codage| C(Programme B)
+{{< /mermaid >}}
+
+Vouloir décompiler le programme de l'adversaire est illégal.\
+Dans l'article de la loi L.132.6.1 du code de la propriété intellectuelle : Il est interdit de décompiler pour reproduire du code.
+
+### Modèle économique de la création logicielle
+
+ *Question* : Dans quel cas farfouiller dans le code est un chose bien ?
+
+ Directive 91/250/CE indique : L'informatique est un monde de bien substituable. Le but est de réguler le marché et d'établir des règles de concurrence non fautive.
+
+Des règles spécifique ont été mis en œuvre pour que chaque type de marchés soit régulés.
+
+La vrai valeur d'un logiciel est le fait de traduire une idée en œuvre. Du coup il faut protéger ça.
+
+Si on suit le schéma page 87. Le but est que le développement d'un logiciel équivalent, nécessite le même coût que le logiciel "initial". Tout raccourci est interdit.
+
+Réutiliser les morceaux d'une œuvre de quelqu'un sans avoir d'accord avec cette personne est interdit. Il s'agit là de contrefaçon.
+
+Un autre problème est les marchés captifs créés par les formats de données.\
+C'est ici qu'intervient la notion d'interopérabilité.
+
+### Formats de données
+
+La **valeur d'une donnée est beaucoup plus importante** que la valeur d'un logiciel ou d'un matériel.
+
+Un format de donnée est un langage, un manière d'exprimer l'information.
+
+Si un éditeur qui a créer un format de donnée propriétaire, met la clé sous la porte, alors il est impossible d'utiliser ce format de donnée. Donc plus le support est ancien, plus le coût est élevé.
+
+L'interopérabilité est stratégique. Internet ne pourrait pas exister sans ça.
+
+### Compatibilité n'est pas interopérabilité
+
+Il y a **compatibilité quand** deux produits peuvent fonctionner ensemble. Avec des **accords** ou en contrôlant un **format compatible entre les deux**.
+
+Il y a **interopérabilité quand** deux produits peuvent fonctionner ensemble et que l'**on sait pourquoi**. Avec par exemple un standard ouvert.
+
+### Recherche de l'interopérabilité
+
+Il est légal de faire du reverse engineering ou de trifouiller afin de rendre un format interopérabilité.
+
+Attention : Il faut documenter le processus, afin de ne pas être accuser de fouiller autre chose dans le code du programme. Il y a des procédures pour éviter ce genre de problèmes.
+
+### Formats ouverts
+
+Il y a une différence entre le *format libre* et le *format ouvert*.
+
+Un format ouvert peut devenir une norme. Ex : Le W3C peut devenir un standard de normalisation.\
+Bataille dans le monde de ces formats.
