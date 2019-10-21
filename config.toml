@@ -31,8 +31,8 @@ publishDir = "docs"
   weight = 70
 
 [[menu.main]]
-  name   = "Droit"
-  url    = "/Droit/"
+  name   = "Droit et Eco"
+  url    = "/Droit_Eco/"
   weight = 60
 
 [[menu.main]]

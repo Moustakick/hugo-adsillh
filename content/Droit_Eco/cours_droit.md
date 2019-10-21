@@ -4,7 +4,7 @@ date: 2019-09-25T14:16:19+02:00
 draft: false
 ---
 # Cours 17/09/2019
-## Droit des logiciels et des données à caractère personels
+## Droit des logiciels et des données à caractère personnels
 **Diapo** : http://dept-info.labri.fr/ENSEIGNEMENT/droitlog
 ## Economie des biens immatériels
 + Immatériel ≠ matériel
