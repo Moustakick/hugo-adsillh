@@ -38,3 +38,9 @@ tags: ["outil"]
 > Sur github c'est le dev qui estime si un bug est corrigé et si il ferme l'issue.
 
 > Sur forge, c'est les gens qui font le commit qui indique si le bug est corrigé et si il doit d'être fermé.
+
+## ITIL
+
+### Phases
+
+### Rédaction et publication du rapport d'incident

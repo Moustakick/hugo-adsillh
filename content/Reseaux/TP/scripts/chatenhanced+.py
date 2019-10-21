@@ -34,6 +34,7 @@ def main():
                 i.send(message.encode("UTF-8")+b"\n")
 
 
+
 ##########################################################################
 
     def command(com, msg, sck):

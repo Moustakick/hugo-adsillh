@@ -99,7 +99,7 @@ Définition : SGBD \
 + Problème des types structurés
     + Date de naissance, numéro INSEE... :Est-ce un objet simple ou complexe. Par exemple la date de naissance 16/09/19 peut être une valeur décomposable mais est traitée comme non décomposable (atomique).
     + Chaine de caractères. Idem.
-+ Produit cartésien : Soit un ensemble de domaines D1, … ,Dn. Le produit cartésien noté D1*...*Dn est l’ensemble des n-uplets (tuples, vecteurs) <v1, … , vn> tels que [voir diapo].
++ Produit cartésien : Soit un ensemble de domaines D1, … ,Dn. Le produit cartésien noté D1*...\*Dn est l’ensemble des n-uplets (tuples, vecteurs) <v1, … , vn> tels que [voir diapo].
     + On prend au moins deux objets et on les associes de toutes les manières possibles (toutes les combinaisons possibles)
 + Relation : Une relation est un sous ensemble des produits cartésiens. Ex : le drapeau hollandais et le drapeau francais, le domaine des couleurs * positions est similaire mais les sous ensembles sont différents.
     + Terminologie :
@@ -116,9 +116,9 @@ Définition : SGBD \
 + Contrainte d’une relation
     + Soit un attribut A:D. Une contrainte de domaine sur l’attribut est un prédicat qui défini les seules valeurs possibles.
         + Exemple : soit une attribut NumeroMois:Entier. 1 =< NumeroMois =< 12
-    + Une contrainte statique sur v est un prédicat sur D1* … *Dn qui défini les seules valeurs possibles pour v.
+    + Une contrainte statique sur v est un prédicat sur D1* … \*Dn qui défini les seules valeurs possibles pour v.
         + Exemple : mois en 31 et en 30, la valeur max des jours dépend de la valeur du mois.
-    + Une contrainte sur r est un prédicat sur D1* … *Dn qui défini les seules sous-ensembles de tuples possibles pour r.
+    + Une contrainte sur r est un prédicat sur D1* … \*Dn qui défini les seules sous-ensembles de tuples possibles pour r.
 
 ## Concept de base : schéma de relation
 
