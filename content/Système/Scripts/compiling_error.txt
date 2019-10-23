@@ -1,0 +1,4 @@
+/tmp/cache-mocafrain/ccaaUHOa.o : Dans la fonction « main » :
+sectionCrit.c:(.text+0x97) : référence indéfinie vers « pthread_create »
+sectionCrit.c:(.text+0x10e) : référence indéfinie vers « pthread_join »
+collect2: error: ld returned 1 exit status

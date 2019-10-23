@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 void trigger_exit(void) {
 printf("Invoking exit handler!\n");
 }
