@@ -256,3 +256,5 @@ Voici un mail de test
 ### SAMBA LDAP
 
 http://simon.crespeau.emi.u-bordeaux.fr/cours/adminsys/ldap/ldap-et-samba/
+
+https://wiki.debian.org/LDAP/OpenLDAPSetup#For_SAMBA_LDAP_support
