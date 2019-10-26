@@ -18,6 +18,8 @@ draft: false
 
 - Cours de Yorick : https://frama.link/rWhDNX0d
 
+- Cours de Simon : https://frama.link/BgSE-gtn
+
 - Le framagit : https://frama.link/dCA1bBme
 
 - Pad commun : https://frama.link/_1bJWF-7

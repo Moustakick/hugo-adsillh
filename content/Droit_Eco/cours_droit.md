@@ -485,3 +485,80 @@ Il y a une différence entre le *format libre* et le *format ouvert*.
 
 Un format ouvert peut devenir une norme. Ex : Le W3C peut devenir un standard de normalisation.\
 Bataille dans le monde de ces formats.
+
+
+______
+
+# Les données à caractère personnelles
+
+[... A noter ...]
+
+On compte sur les usagés eux mêmes pour faire remonter des pratiques deloyals.
+
+## Evolution du fait du RGPD
+
+Il ne parle cependant pas de format ouvert dans la RGPD.
+
+"Privacy by design" : protection des données à caractère personnelles par conception.
+
+Quand la portée de la violation de donnée est importante (vole des données), alors ils ont l'obligation d'informer l'autorité.
+
+OBligation du responsable de traitement :
++ Registre de traitements : Un excel pour les petites boites par exemple.
++ Eventuelle analyse d'impact : Document permettant de montrer si ce qu'on fait c'est dangereux et comment gerer si ça part en couille.
++ Encadrement des transfert hors UE : On ne peut pas envoyer les DCP dans un pays n'ayant pas la même loi sur des DCP.
++ Information des personnes
++ Materialisation du consentement
++ Procédures pour l'exercice des droits
++
++
+
+-- Recherche : decision d'adequation
+
+Si jamais on sent que le traitement des DCP est vraiment corrosif il faut consulter les autorités de protection pour avoir des conseils ou autres.
+
+## Anonymisation et réidentification
+
+L'anonymisation des données est un sujet critique à l'ère du numérique.\
+Si j'anonymise les DCP alors ils ne sont plus soumis à la RGPD.
+
+Certaine personne se disent qu'en enlevant juste le nom et le prénom suffit à rendre anonyme des DCP. Que neni. Cela correspond à de la pseudonymisation.
+
+ie : Si un maire demande à un opérateur téléphonique un ensemble de coordonnées, de route, pour faire des travaux d'agencement dans la ville. Et bien ce n'est pas anonyme. Parce qu'en récupèrant (sur Twitter ou autre) quelques données et en les placant sur cette cartes de plusieurs coordonnées. Alors on peut identifier à 95% une coordonnées précise.\
+Pour palier à ce problème alors on peut faire des grosses moyennes des coordonnées. Alors la donnée est moins intéressante pour le maire mais il n'y a pas de moyen de tracer une personne.
+
+## Gestion de la biométrie
+
++ Deux utilités :
+  + Authentification
+  + Identification -> Ne doit pas être possible hors fichier de la police.
+
+______
+
+# Droits relatifs aux bases de données
+
+En tant qu'objet conceptuel, les BDD ont des droits.
+
+Definition juridique de la BDD : Recueuil d'oeuvre, de données, ou d'autres éléments indépendants, disposé de manière systèmatique ou méthodique, et individuellement accessibles par des moyens électroniques ou par tout autres moyen. \
+Merci Captain Obvious. Definition très literaire de la BDD, se qui va poluer l'intégralité de ce droit.
+
+Deux droits distincts :
++ Droit relatif à l'agencement de matières.
++ Droit des producteurs de BDD.
+
+## Droit relatif à l'agencement des matières.
+
+Definission qui indique que la manière d'agencer l'information dans la BDD constitue une oeuvre. et Par conséquent est protégé par les droits d'auteurs.
+
+## Droit des producteurs de BDD
+
+Droit à la concurrence déguisé.
+
+Le texte indique qu'il faut qu'il y ait quelque chose de substantiel pour appliquer ce droit.
+
+## Prérogative des PdBDD
+
+Le flou le plus total. Du coup juge va devoir se transformer en juge commercial.
+
+ie : La base de donnée de france telecom n'est pas protégée parce que selon la loi, la conception de cette base ne fait pas un poid suffisant étant donnée que c'est les clients qui ont payés pour ces données.\
+Pour ça qu'il y a des annuaires inversés concurrents.
