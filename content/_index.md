@@ -34,3 +34,5 @@ ___
 
 Prises de notes au format Markdown. Ces notes ne sont pas des cours complet mais des additions aux cours et leurs supports. \
 Site web Hugo hébergé sur Netlify et compilé depuis les sources du depôt Github, *feel free to contribute*.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0822f85f-dab4-4d73-b484-db6f37a1fb7d/deploy-status)](https://app.netlify.com/sites/hugo-adsillh/deploys)
