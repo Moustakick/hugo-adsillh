@@ -25,3 +25,5 @@ mdp : mdpmocafrain -->
 Lien vers le répertoire personnel du prof : `/net/cremi/algriffa/LPro_BD/` :
 
 + ./2018-2019 --> pour les exemples de script SQL de création et de suppression de table PostgreSQL.
+
++ Problématique de la gestion des conflits pour la reservation.
