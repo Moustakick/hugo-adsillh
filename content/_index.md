@@ -24,7 +24,7 @@ draft: false
 
 - Pad commun : https://frama.link/_1bJWF-7
 
-- L'instance NextCloud : https://frama.link/ZtEwY_RW
+- NextCloud : https://frama.link/ZtEwY_RW
 
 ### Lien github du site :
 
