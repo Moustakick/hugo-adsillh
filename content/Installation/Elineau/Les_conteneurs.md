@@ -83,4 +83,11 @@ volumes:
 
 Puis lancer la commande : `docker-compose -f stack.yml up`. Cette commande va composer et lancer des applications multi-conteneurs depuis le fichier de configuration que nous lui avons passer avec l'argument -f.
 
+
+L'application devrait fonctionner, on peut y acceder depuis le lien http://localhost:8080/ .
+
+On peut observer le fonctionnement. Pour faire tourner le docker en arrière plan on peut y passer l'argument --detach.
+
+Version alternative si problème de db :
+
 https://docs.docker.com/compose/wordpress/
