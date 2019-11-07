@@ -91,3 +91,25 @@ On peut observer le fonctionnement. Pour faire tourner le docker en arrière pla
 Version alternative si problème de db :
 
 https://docs.docker.com/compose/wordpress/
+
+### Kubernetes
+
+Dans Kub nous allons gérer des pods et dans ces pods il va y avoir des conteneurs. Les conteneurs vont avoir le même espace de travail au sein d'un pod, ils peuvent ainsi communiquer.
+
+Tout les pods "esclaves" sont gérées par un "maitre". Le tout est dirigé par une API.
+
+![DiagrammeKub](./Les_conteneurs_ressources/DiagrammeKub.svg)
+
+Pour le cas de la redondance des données :
+
+Pour le déploiement :
+
+Dans le cas des applications stateless (dans le où il ne s'agit pas d'une application qui change beaucoup) il y a le "deployment". Pour les autre il y a le déploiement "statefull-state".
+
+note : outil "helm"
+
+Manière de mettre à jour les applications :
+
++ Rolling update : Dirigé le flux d'un pod 1.0 à un pod 1.1, si il fonctionne il éteind le 1.0 et laisse le 1.1.
++ L'autre cas : Il dirige tout vers 1.1 et supprime 1.0 (le problème est l'absence de pod pour un instant)
++ Et le dernier cas : Il dirige les flux progressivement de la version 1.0 à 1.1, jusqu'à ce qu'il n'y ait plus rien sur la version 1.1.
