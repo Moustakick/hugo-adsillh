@@ -82,3 +82,5 @@ volumes:
 ```
 
 Puis lancer la commande : `docker-compose -f stack.yml up`. Cette commande va composer et lancer des applications multi-conteneurs depuis le fichier de configuration que nous lui avons passer avec l'argument -f.
+
+https://docs.docker.com/compose/wordpress/
