@@ -1,0 +1,1 @@
+void bar(char *buffer);
