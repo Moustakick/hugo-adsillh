@@ -113,3 +113,23 @@ Manière de mettre à jour les applications :
 + Rolling update : Dirigé le flux d'un pod 1.0 à un pod 1.1, si il fonctionne il éteind le 1.0 et laisse le 1.1.
 + L'autre cas : Il dirige tout vers 1.1 et supprime 1.0 (le problème est l'absence de pod pour un instant)
 + Et le dernier cas : Il dirige les flux progressivement de la version 1.0 à 1.1, jusqu'à ce qu'il n'y ait plus rien sur la version 1.1.
+
+### Minikube
+
+https://minikube.sigs.k8s.io/docs/start/linux/
+
+Installation de minikube (debian) :
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_1.5.2.deb \
+ && sudo dpkg -i minikube_1.5.2.deb
+```
+
+Si nous sommes sur une VM nous allons faire fonctionner kubernetes en mode "bare-metal" il faut demarrer `sudo minikube start --vm-driver=none`. Et pour ne pas avoir à retaper cette commande à chaque fois, pour défnir cette config par défaut `sudo minikube config set vm-driver none`.
+
+Ce tuto est très bien foutu (et officiel kubernetes) :
+https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
+
+### Creation d'un cluster de 3 machines virtuelles
+1 Master et 2 Slaves.
+
+https://kubernetes.io/fr/docs/setup/independent/create-cluster-kubeadm/
