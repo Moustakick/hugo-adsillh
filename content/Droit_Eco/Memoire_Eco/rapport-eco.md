@@ -2,6 +2,20 @@
 
 ## Les différents modèles économiques
 
-+ FairMail (Android)
++ FairEmail (Android)
 + Nextcloud
-+ khal
++ Firefox
+
+## Étude de cas
+
+### Nextcloud
+
++ Présentation grossière de la société
++ Présentation de leurs produits & type de licence
++ modèle(s) eco autour des produits
++ Source de revenu ???
+
+### FairEmail
+
+### Firefox
+https://fourweekmba.com/how-does-mozilla-make-money/
