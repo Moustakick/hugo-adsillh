@@ -11,7 +11,7 @@ template: eisvogel
 
 metadata:
   mainfont: calibri
-  fontsize: 11pt
+  fontsize: 12pt
   language: fr-FR
   type: report
   colorlinks: true
