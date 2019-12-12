@@ -2,18 +2,38 @@
 
 ## Les différents modèles économiques
 
-+ FairEmail (Android)
 + Nextcloud
++ FairEmail (Android)
 + Firefox
 
 
-## Nextcloud
-
 + Présentation grossière de la société
 + Présentation de leurs produits & type de licence
-+ modèle(s) eco autour des produits
++ Modèle(s) eco autour des produits
 + Source de revenu ??? résumé ???
 
+\pagebreak
+## Nextcloud
+
+### L'application
+
+Nextcloud est un logiciel libre de site d'hébergement de fichiers, et un fork du logiciel ownCloud. À l'origine accessible via WebDAV, n'importe quel navigateur web, ou des clients spécialisés, son architecture ouverte a permis de voir ses fonctionnalités s'étendre depuis ses origines.
+
+Le logiciel Nextcloud est développé par Nextcloud GmbH. et la communauté, le tout sur [github](https://github.com/nextcloud/server) sous une licence AGPLv3. L'éditeur et principal mainteneur de l'application est Nextcloud GmbH.
+
+### Modèle économique
+
+Le modèle économique de Nextcloud est celui de l'Open Source professionnel. Nextcloud GmbH. tire ses revenus des services professionnels, de la maintenance et du support associés au logiciel qu'il édite. Il propose aussi un modèle open core avec une version "Nextcloud Entreprise" qu'il couple en général avec le support pour la vente.
+
+Sur son site Nextcloud propose [3 grilles tarifaires](https://nextcloud.com/fr_FR/pricing/) comprenant la version entreprise de Nextcloud, et un support personnalisé avec différents prix en fonction du niveau de la prise en charge du support. Le prix peut varier en fonction des composants supplémentaires optionnel.
+Nextcloud propose aussi un service d'installation/intégration assisté en ligne.
+
+L'entreprise propose un [service d'hébergement](https://nextcloud.com/fr_FR/signup/) de l'application en ligne en collaboration avec plusieurs hébergeurs, afin d'avoir un stockage cloudé.
+
+Nextcloud réalise aussi la [vente de matériel](https://nextcloud.com/fr_FR/devices/) sur lesquels Nextcloud est déjà pré-installé et configurable, en collaboration avec diverses entreprises comme les constructeurs des Raspberry Pi.
+
+
+\pagebreak
 ## FairEmail
 
 \pagebreak
@@ -27,7 +47,6 @@ La fondation mozilla publie ces logiciels sous une licence nommée Mozilla Publi
 
 ### Modèle économique
 
-
 D'après le site officiel www.mozilla.org[1], à sa création en 2003 la Fondation Mozilla est une organisation indépendante à but non lucratif soutenue par des donateurs individuels et un ensemble d’entreprises.
 
 Aujourd'hui la Fondation Mozilla suit le modèle économique des fondations. Plusieurs entreprises investissent du temps et des ressources dans la conception et l'amélioration des logiciels de la fondation comme Firefox ou Thunderbird dans l'objectif d'une amélioration profitable à tous et surtout à eux.
@@ -37,7 +56,12 @@ A savoir que pour le cas de Firefox, une très grande parties des revenus vienne
 [1]: https://www.mozilla.org/fr/about/history/
 
 \pagebreak
-## Référence
+## Références
+
++ Nextcloud :
+  - https://fr.wikipedia.org/wiki/Nextcloud
+  - https://en.wikipedia.org/wiki/Nextcloud
+  - https://github.com/nextcloud/server
 
 + Firefox :
   + https://fourweekmba.com/how-does-mozilla-make-money/

@@ -10,17 +10,18 @@ input-files:
 template: eisvogel
 
 metadata:
-  mainfont: calibri
-  fontsize: 12pt
-  language: fr-FR
-  type: report
-  colorlinks: true
   title: "Mémoire d'Économie des Logiciels Libres"
+  subtitle: "Étude de cas des modèles économiques des logiciels libres"
   author: Maxime Oçafrain
   date: "15-12-2019"
+  mainfont: calibri
+  fontsize: 12pt
   subject: "Mémoire"
   keywords: [Markdown, Mémoire]
-  subtitle: "Étude de cas des modèles économiques des logiciels libres"
+  language: fr-FR
+  geometry: [top=2.5cm, bottom=3cm, left=3cm, right=3cm]
+  colorlinks: true
+  type: report
 
 table-of-contents: true
 
@@ -29,8 +30,8 @@ highlight-style: zenburn
 variables:
   documentclass: article
   toc-own-page: true
-  logo: ./img/imageedit_2_6639094819.png
-  logo-width: 250
   titlepage: true,
   titlepage-rule-color: "3DC4D4"
   titlepage-background: "./img/canvas.png"
+  logo: ./img/imageedit_2_6639094819.png
+  logo-width: 250
