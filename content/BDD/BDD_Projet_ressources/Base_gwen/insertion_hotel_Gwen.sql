@@ -1,0 +1,33 @@
+INSERT INTO Hotel.Chambre
+  VALUES(DEFAULT,20);
+INSERT INTO Hotel.Chambre
+  VALUES(DEFAULT,20);
+INSERT INTO Hotel.Chambre
+  VALUES(DEFAULT,30);
+INSERT INTO Hotel.Chambre
+  VALUES(DEFAULT,40);
+INSERT INTO Hotel.Chambre
+
+INSERT INTO Hotel.Bar
+  VALUES('Biere',2);
+INSERT INTO Hotel.Bar
+  VALUES('Coca',2);
+INSERT INTO Hotel.Bar
+  VALUES('Ricard',4);
+INSERT INTO Hotel.Bar
+  VALUES('Vin',17);
+INSERT INTO Hotel.Bar
+  VALUES('Rhum Don Papa',35);
+
+INSERT INTO Hotel.Client
+  VALUES(DEFAULT,'Maxime','Ocafrain','mo@ma.me','ma.moc');
+
+INSERT INTO Hotel.Reservation
+  VALUES(DEFAULT,1,1,'2019-10-21','2019-11-15',FALSE, DEFAULT);
+  VALUES(DEFAULT,2,1,'2019-10-22','2019-11-14',FALSE, DEFAULT);
+
+
+INSERT INTO Hotel.Consommation
+  VALUES(1,'2019-11-11','Biere',17);
+  VALUES(1,'2019-11-11','Coca',4);
+  VALUES(1,'2019-11-11','Vin',1);
