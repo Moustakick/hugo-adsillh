@@ -1,0 +1,37 @@
+from: markdown
+
+to: pdf
+
+output-file: rapport-bdd.pdf
+
+input-files:
+  - ./rapport-bdd.md
+
+template: eisvogel
+
+metadata:
+  title: "Rapport de BDD"
+  subtitle: "Rapport de projet de Base de Données"
+  author: Maxime Oçafrain
+  date: "20-12-2019"
+  mainfont: calibri
+  fontsize: 12pt
+  subject: "Rapport"
+  keywords: [Markdown, Rapport]
+  language: fr-FR
+  geometry: [top=2.5cm, bottom=3cm, left=3cm, right=3cm]
+  colorlinks: true
+  type: report
+
+table-of-contents: true
+
+highlight-style: zenburn
+
+variables:
+  documentclass: article
+  toc-own-page: true
+  titlepage: true,
+  titlepage-rule-color: "ffd42a"
+  titlepage-background: "./img/canvas3.png"
+  logo: ./img/imageedit_2_6639094819.png
+  logo-width: 250
