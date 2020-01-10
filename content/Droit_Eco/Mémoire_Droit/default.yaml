@@ -1,0 +1,37 @@
+from: markdown
+
+to: pdf
+
+output-file: memoire_droit.pdf
+
+input-files:
+  - ./memoire_droit.md
+
+template: eisvogel
+
+metadata:
+  title: "Mémoire de droit"
+  subtitle: "Étude de cas de droit des logiciels et de protection des données à caractère personnel"
+  author: Maxime Oçafrain
+  date: "10-01-2020"
+  mainfont: calibri
+  fontsize: 12pt
+  subject: "Mémoire"
+  keywords: [Markdown, Mémoire]
+  language: fr-FR
+  geometry: [top=2.5cm, bottom=3cm, left=3cm, right=3cm]
+  colorlinks: true
+  type: report
+
+table-of-contents: true
+
+highlight-style: zenburn
+
+variables:
+  documentclass: article
+  toc-own-page: true
+  titlepage: true,
+  titlepage-rule-color: "3DC4D4"
+  titlepage-background: "./img/canvas.png"
+  logo: ./img/imageedit_2_6639094819.png
+  logo-width: 250
