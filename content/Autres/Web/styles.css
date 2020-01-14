@@ -1,0 +1,18 @@
+#inputvalue1{
+    margin-left: 10px;
+}
+#zone{
+    border: solid;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 300px;
+    height: 300px;
+}
+.container{
+    display: flex;
+  }
+
+#divsubmit{
+    margin-top: 10px;
+}

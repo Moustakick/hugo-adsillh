@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ceci est une page type</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div>Resultat : </div>
+        <div id="inputvalue1"></div>
+    </div>
+
+    <div class="container">
+        <div id="zone">zone1
+            <p id="textzone1">Les zones sont en <i>flex</i>. Ce qui permet d'avoir une certaine "<i>responsive</i>" de la part des éléments en plus de les avoirs côte-à-côte sur un écran plus large.</p>
+            <P>Formulaire : lorsque l'on clique sur le bouton "Envoyer" à condition d'avoir le champ "Input2" non vide, le champ "Resultat" plus haut va prendre la valeur du champ "Input1".</P>
+            <img src="" alt="">
+        </div>
+        <div id="zone">zone2
+                <form id="formulaire" class="item item-2" action="">
+                    <fieldset>
+                        <legend>Input fields</legend>
+                        <div id="divinput1">
+                             <label>Input1 :</label>
+                            <input id="input1" type="text" title="Merci de completer ce champ">
+                        </div>
+                        <div id="divinput2">
+                            <label>Input2 :</label>
+                            <input id="input2" type="text" title="Merci de completer ce champ">
+                         </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sending fields</legend>
+                        <div id=divsubmit>
+                            <input id="submit" type="button" value="Envoyer">
+                        </div>
+                    </fieldset>                
+                </form>
+        </div>
+    </div>
+
+    
+
+    <script>
+        console.log("test");
+        var field = document.getElementById("input1");
+        var test = document.getElementById("inputvalue1");
+        var field2 = document.getElementById("input2");
+        var valid = document.getElementById("submit");
+
+
+        test.innerText = field.value;
+
+        class InfoForm{
+            constructor(field1, field2){
+                this.field1 = field1;
+                this.field2 = field2;
+            }
+
+            updateTitle(text) {
+                if(this.field2 != ""){
+                    text.innerText = this.field1;
+                }
+                else{
+                    alert("Merci de completer les champs")
+                }
+            }
+
+            setField1(value){
+                this.field1 = value;
+            }
+
+            getField1(){
+                return this.field1;
+            }
+
+            setField2(value){
+                this.field2 = value;
+            }
+
+            getField2(){
+                return this.field2;
+            }
+        }
+
+        const objetInfo = new InfoForm(field.value, field2.value);
+        
+        valid.addEventListener("click", function() {
+            objetInfo.setField1(field.value);
+            objetInfo.setField2(field2.value);
+            objetInfo.updateTitle(test);
+        });
+
+
+        // field.addEventListener("input", function() {
+        //     if(field2.value != ""){
+        //         test.innerText = field.value;
+        //     }
+        // });
+
+        // field2.addEventListener("input", function() {
+        //     if(field2.value != ""){
+        //         test.innerText = field.value;
+        //     }
+        // });
+
+    </script>
+</body>
+</html>
