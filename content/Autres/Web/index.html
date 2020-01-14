@@ -42,12 +42,12 @@
                         <div id=divsubmit>
                             <input id="submit" type="button" value="Envoyer">
                         </div>
-                    </fieldset>                
+                    </fieldset>
                 </form>
         </div>
     </div>
 
-    
+
 
     <script>
         console.log("test");
@@ -92,13 +92,14 @@
         }
 
         const objetInfo = new InfoForm(field.value, field2.value);
-        
+
         valid.addEventListener("click", function() {
             objetInfo.setField1(field.value);
             objetInfo.setField2(field2.value);
             objetInfo.updateTitle(test);
         });
 
+        // Décommenter en dessous pour raffraichir le titre sans avoir à appuyer sur le bouton. 
 
         // field.addEventListener("input", function() {
         //     if(field2.value != ""){
