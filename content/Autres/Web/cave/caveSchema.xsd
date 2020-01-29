@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="bouteille" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="appellation"/>
+              <xs:element type="xs:string" name="chateau"/>
+              <xs:element type="xs:short" name="annee"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

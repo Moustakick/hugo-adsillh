@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cave>
+  <bouteille>
+    <appellation>Bordeaux</appellation>
+    <chateau>Cheval Quancard</chateau>
+    <annee>2016</annee>
+  </bouteille>
+  <bouteille>
+    <appellation>Saint-Émilion</appellation>
+    <chateau>Chateau Franc Pipeau</chateau>
+    <annee>2015</annee>
+  </bouteille>
+  <bouteille>
+    <appellation>Châteauneuf-du-Pape</appellation>
+    <chateau>La bernardine</chateau>
+    <annee>2016</annee>
+  </bouteille>
+</cave>
