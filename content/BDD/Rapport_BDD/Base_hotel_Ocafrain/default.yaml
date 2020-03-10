@@ -2,17 +2,17 @@ from: markdown
 
 to: pdf
 
-output-file: rapport-bdd.pdf
+output-file: rapport-projet.pdf
 
 input-files:
-  - ./rapport-bdd.md
+  - ./rapport-projet.md
 
 template: eisvogel
 
 metadata:
-  title: "Rapport de BDD"
-  subtitle: "Rapport de projet de Base de Données"
-  author: Maxime Oçafrain
+  title: "Rapport de projet"
+  subtitle: "Rapport de projet pour la licence professionnelle ADSILLH"
+  author: Yorick Barbanneau, Florian "Pizzacoca" Lassenay, Axel Danguin, Maxime Oçafrain
   date: "20-12-2019"
   mainfont: calibri
   fontsize: 12pt

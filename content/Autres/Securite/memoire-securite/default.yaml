@@ -1,0 +1,37 @@
+from: markdown
+
+to: pdf
+
+output-file: rapport-securite.pdf
+
+input-files:
+  - ./rapport-secu.md
+
+template: eisvogel
+
+metadata:
+  title: "Rapport de sécurité"
+  subtitle: "Rapport de sécurité pour la licence professionnelle ADSILLH"
+  author: Maxime Oçafrain
+  date: "11-03-2020"
+  mainfont: calibri
+  fontsize: 12pt
+  subject: "Rapport"
+  keywords: [Markdown, Rapport]
+  language: fr-FR
+  geometry: [top=2.5cm, bottom=3cm, left=3cm, right=3cm]
+  colorlinks: true
+  type: report
+
+table-of-contents: true
+
+highlight-style: zenburn
+
+variables:
+  documentclass: article
+  toc-own-page: true
+  titlepage: true,
+  titlepage-rule-color: "ffd42a"
+  titlepage-background: "./img/canvas2.png"
+  logo: ./img/imageedit_2_6639094819.png
+  logo-width: 250
